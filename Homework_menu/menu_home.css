@@ -1,0 +1,86 @@
+body {
+    margin-left: 22px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial Narrow, sans-serif;
+    color: #a1a0b1;
+    transition: all 1s ease;
+
+}
+
+.menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.menu a:hover {
+    background: url(images/Menu_blue_button.png);
+    color: #f0f0f0;
+    transition: color 1s ease;
+}
+
+.menu .sub_menu_item .sub_menu_a {
+    background: no-repeat right url(images/Arrow.png);
+    color: #a1a0b1;
+    transition: color 1s ease;
+}
+
+.menu .sub_menu_item .sub_menu_a:hover {
+    background: no-repeat right url(images/Arrow.png), url(images/Menu_blue_button.png);
+    color: #f0f0f0;
+    transition: color 1s ease;
+}
+
+.menu li {
+    position: relative;
+    height: 40px;
+    width: 12.2vw;
+    float: left;
+    text-align: center;
+    background: url(images/Background.png);
+}
+
+.menu li:first-child {
+    background: no-repeat url(images/Background_left.png), url(images/Background.png);
+}
+
+.menu li:last-child{
+    background: url(images/Background_rignt.png) no-repeat right, url(images/Background.png);
+}
+
+ul {
+   list-style-type: none;
+    padding: 0;
+}
+
+.t_item, .t_item2 {
+    display: table;
+    width: 12.2vw;
+    height: 40px;
+}
+
+.t_item_cell, .t_item2_cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu li ul {
+    display: none;
+}
+
+.menu a:hover+ul {
+    display: block;
+    position: absolute;
+}
+
+.sub_menu .t_item2 {
+    background: no-repeat left url(images/Background_left.png), no-repeat right url(images/Background_rignt.png) ;
+}
+
+
+
