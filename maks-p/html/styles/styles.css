@@ -1,0 +1,56 @@
+body {
+  background: gray url(../images/logo.png) no-repeat top right fixed;
+}
+a,
+a:link,
+a:hover {
+  color: yellow;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.main {
+  height: 100px;
+  width: 400px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.one {
+  color: #df56cd;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.two {
+  text-align: right;
+  text-decoration: line-through;
+  font-size: 22px;
+  text-shadow: 5px 2px 2px ;
+}
+
+.four {
+  text-indent: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.list {
+  list-style-image: url(../images/logo.png);
+}
+
+.sprites .first-bird {
+  opacity: 0.5;
+  width: 115px;
+  height: 115px;
+  background: url(../images/angry_birds.png) no-repeat;
+}
+.second-bird {
+  width: 110px;
+  height: 110px;
+  background: url(../images/angry_birds.png) no-repeat;
+  background-position: 0 -110px;
+}
