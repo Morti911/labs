@@ -1,0 +1,51 @@
+html, body{
+    padding:0;
+    margin:0;
+}
+
+.col-md-4{
+    border: 1px solid #000;
+    margin:5px 0px;
+    padding:10px;
+    height:40px;
+    width: 33.33%;
+    box-sizing: border-box;
+    float:left;
+}
+
+.clearfix:after{
+    content: '';
+    clear: both;
+    display:block;
+}
+
+.absolute{
+    border: 1px dotted red;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -50px;
+}
+.relative{
+    border:1px solid blue;
+    position:relative;
+    height:100px;
+}
+
+.box-100px{
+    border: 1px dashed green;
+    width: 25%;
+    height: 100px;
+    display: inline-block;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.wrap{
+    font-size:0px;
+}
