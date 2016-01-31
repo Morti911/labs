@@ -86,10 +86,10 @@ input {
 	margin-bottom: 10px;
 }
 
+
 input:hover {
 	border: solid 1px #2F3847;
 }
-
 
 #form input[name="username"],
 #form input[name="usersurname"] {
