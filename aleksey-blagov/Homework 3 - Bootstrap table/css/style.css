@@ -1,0 +1,43 @@
+.col-md-1-box::after {
+  position: relative;
+  display: block;
+  content: '';
+  clear: both;
+  text-align: center;
+  width: 100%;
+}
+
+.col-md-1,
+.col-md-4,
+.col-md-6,
+.col-md-8 {
+  margin: 0 auto;
+  display: block;
+  float: left;
+  border: 1px solid rgba(86,61,124,.2);
+  background-color: rgba(86,61,124,.15);
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.col-md-1 {
+  width: 8.33%;
+}
+
+.col-md-4 {
+  width: 33.33%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-8 {
+  width: 66.66%;
+}
+
+.blank {
+  line-height: normal;
+}
