@@ -1,0 +1,9 @@
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #000;
+  text-shadow: 2px 5px  7px #3184e8, 0 0 1em red;
+  background: linear-gradient(90deg, red, blue);
+}
