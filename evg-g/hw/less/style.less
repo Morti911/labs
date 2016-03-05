@@ -1,0 +1,71 @@
+@import "normalize.css"; //подключение файла обнуления стилей
+@import "variables.less";   //подключение файла где описанны переменные
+@import "helpers.less";   //подключение файла где описанны помошники (основные классы)
+
+body {
+  background: @mainColor;
+}
+
+.box {
+  @color: #f00;
+
+  .box-100px-100px();
+  .border(#f00);    // задаем свое значение для класса
+  .border-radius();
+  .background (#f00);
+
+  &:hover {
+    .background(lighten(@color, 20%));
+    .border(lighten(@color, 20%), 50%);
+//    .border-radius(50%);
+  }
+}
+
+.box-yellow {
+  @color: #fffc00;
+
+  .box-100px-100px();
+  .border(#fffc00, 50%);
+  .border-radius();
+  .background (#fffc00);
+
+  &:hover {
+    .background(@color - #dd4fd1);
+    .border(darken(@color, 20%));
+    .border-radius(50%);
+  }
+}
+
+.box-green {
+  @color: #4aff00;
+  .box-100px-100px();
+  .border();           //вызываем для бордера дефолтное значение
+  .border-radius();
+  .background (#4aff00);
+  &:hover {
+    .background(darken(@color, 20%));
+    .border(darken(@color, 20%));
+    .border-radius(50%);
+  }
+}
+
+
+.menu {
+  .menu-list {
+    list-style-type: none;
+    .clearfix();
+
+    .border();
+    .menu-list-item {
+      float: left;
+      a {
+        display: block;
+        padding: 5px 15px;
+        color: yellow;
+        &:hover {
+          color: green;
+        }
+      }
+    }
+  }
+}

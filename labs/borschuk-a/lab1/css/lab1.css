@@ -1,0 +1,45 @@
+body{
+  background: url('../img/old_map.png');
+  font-family: Arial;
+  text-shadow: 1px 1px white;
+}
+.main_block{
+  box-shadow: 0 0 20px black;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
+  width: 735px;
+  height: 470px;
+
+}
+.picture_block{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 15px 20px;
+}
+.big_picture_block{
+  box-shadow: 0 0 20px black;
+}
+.picture_block:hover{
+  border: 1px solid #FA0D06;
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+p{
+    text-align: center;
+    width: 710px;
+    margin: 15px auto;
+    font-size: 19px;
+    color: black;
+}
+.big_picture_block{
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+}

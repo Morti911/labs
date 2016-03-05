@@ -1,0 +1,30 @@
+.box-100px-100px {
+  height: @height/2;
+  width: @width/2;
+
+}
+
+.border-radius(@radius: 50%) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+
+}
+
+.border(@color: #00ff12, @borderRadius: 5px) {     //после двоиточия задаем дефолтное значение для колора, ...
+  border: 1px solid @color;
+  .border-radius(@borderRadius);
+
+}
+
+.clearfix {
+  &::after {
+  content: '';
+  clear: both;
+  display: block;
+  }
+}
+
+.background(@color) {
+  background: @color;
+}

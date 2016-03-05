@@ -1,0 +1,490 @@
+body {
+	background: url(../img/bg_all.gif) no-repeat;
+	background-size: cover;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 20px;
+	margin-bottom: 0;
+	padding:0;
+}
+
+html {
+	padding:0;
+	margin: 0;
+}
+
+.logo {
+	width: 963px;
+	position: relative;
+}
+
+}
+
+div .logo-i {
+	float: left;
+	left: 0;
+	position: absolute;
+	width: 160px;
+	height: 39px;
+
+}
+
+.logo-q {
+	float: left;
+	right: 0;
+	position: absolute;
+	top: 10px; 
+	margin:0;
+
+}
+
+
+
+.img::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.search {
+	padding: 4px;
+	background-color: #f3f3f3;
+	border: 1px solid #e7e7e7;
+	height: 32px;
+}
+
+.go {
+	margin-right: 0;
+	height: 31px;
+	width: 41px;
+	margin-left: -4px;
+	overflow: hidden;
+}
+
+.img {
+	height: 31px;
+	width: 42px;
+	margin-left: -4px;
+	cursor: pointer;
+	float: left;
+	right: 0;
+	position: absolute;
+	top: 10px; 
+	margin:0; 
+	z-index: 1;
+}
+
+nav {
+	width: 100%;
+	position: relative;
+}
+
+ul {
+	list-style: none;
+	padding:0px;
+	height: 34px;
+
+}
+
+.main-menu {
+	width: 963px;
+	height: 34px;
+	margin-bottom: 28px;
+	margin-top: 25px;
+}
+
+.menu {
+	width: 100%;
+	border: 1px solid #e7e7e7;
+	background-color: #f3f3f3;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+	
+}
+
+.menu a {
+	display:block;
+	position: relative;
+	float:left;
+	text-decoration: none;
+	margin: 0;
+	color: #9c9c9c;
+	max-height: 40px;
+	padding: 7px 20px 7px 24px;
+}
+
+.menu a:hover {
+	color: white;
+	background-color: #29c5e6;
+	transition: all  0.8s ease;
+}
+
+.menu ul li {
+	position: relative;
+	display: block;
+		height: 40px;
+	}
+
+.menu::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.baner-place {
+	width: 963px;
+}
+
+.baner {
+	position: relative;
+	margin-bottom: 0;
+	max-width: 963px;
+    max-height: 280px;
+    width: 100%;
+	
+}
+
+.outer-menu-nav {
+	width: 963px;
+}
+
+.menu-nav {
+	width: 100%;
+	max-width: 1140px;
+	display: block;
+	background-color: #f3f3f3;
+	height: 50px;
+	box-sizing: border-box;
+	margin:0;
+	margin-top: -5px;
+	border: 1px solid #e7e7e7;
+}
+
+.menu-nav a {
+	display:block;
+	text-decoration: none;
+	color: #9c9c9c;
+	max-height: 50px;
+	height: 49px;
+	padding-top: 14px;
+}
+
+.menu-nav ul {
+	list-style: none;
+	padding:0px;
+	height: 50px;
+
+}
+
+.menu-nav span {
+	padding-right:5px;
+	padding-left: 5px;
+	background-color: #8f8f8f;
+	color: #ffffff;
+	margin-right: 8px;
+	margin-top: -5px;
+}
+
+.menu-nav li {
+	float: left;
+	height: 49px;
+	padding-left: 2%;
+	padding-left: 2%;
+
+}
+
+.menu-nav::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.content {
+	width: 100%;
+   
+    margin-top: -5px;
+}
+
+.content-first::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.content::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.content-first {
+	width: 100%;
+	float: left;
+}
+
+.content-inner {
+	margin-top: 35px;
+	width: 460px;
+	height: 170px;
+	float: left;
+	position: relative;
+	margin-left:10px;
+	margin-right: 10px;
+	box-sizing:border-box;
+}
+
+.content-middle::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.article-header {
+	float: left;
+	color: #868686;
+}
+
+.article-header::before {
+	content: url("../img/before.png");
+	margin-right: 5px;
+}
+
+.lines {
+	background-image: url("../img/lines_divider.gif");
+	background-repeat: repeat-x;;
+	margin-left: 5px;
+	float: left;
+	height: 15px;
+}
+
+.lines1 {
+	width: 57.7%;
+}
+
+.lines2 {
+	width: 54%;
+}
+
+.lines3 {
+	width: 67%;
+}
+
+.lines4 {
+	width: 61.7%;
+}
+
+.lines5 {
+	width: 51%;
+}
+
+.lines6 {
+	width: 84.8%;
+}
+
+
+.wrap1::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.img-article {
+ float: left;
+ margin-right: 7px;
+}
+
+.wrap1 {
+    width: 100%;
+    float: left;
+    margin-bottom: 9px;
+}
+
+
+.wrap2 {
+	width:100%;
+	height: 140px;
+
+}
+
+/*.i {
+	width: 100%;
+	float: left;
+}
+
+.text1 {
+	color: #868686;
+	font-size: 13px;
+	margin-left: 7px;
+	text-align: justify;
+	float: left;
+	position: absolute;
+	margin-left: 153px;
+    top: 16px;
+}
+*/
+
+.text1 {
+	color: #868686;
+	font-size: 13px;
+	text-align: justify;
+}	
+
+.text1::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.read {
+	color: #525252;
+	font-size: 13px;
+}
+
+.content-middle {
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.inner {
+	width:300px;
+	height: 178px;
+	float: left;
+	margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content-midle::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.text2 {
+	width: 100%;
+	float: left;
+}
+
+.intext {
+	color: #868686;
+	font-size: 13px;
+	text-align: justify;
+}
+
+.info {
+	width: 100%;
+	float: left;	
+}
+
+.description {
+	width: 246px;
+	float: left;
+	padding-left: 10px;
+}
+
+.lorem {
+	font-size: 11px;
+	margin: 0;
+	color: #525252;
+}
+
+.lorem2 {
+	font-size: 11px;
+	text-align: justify;
+	margin:0;
+	color: #868686;
+}
+
+.pic {
+	width: 40px;
+    float: left;
+    margin-top: 4px;
+}
+
+.cl {
+	margin: 30px 10px 0 10px;
+    width: 963px;
+    float: left;
+    margin-bottom: 9px;
+}
+
+
+ .clients {
+ 	width: 963px;
+ 	margin: 10px 10px 0 10px;
+ }
+
+.inner-client {
+	float: left;
+	margin: 0 2% 0 2%;
+	padding-top: 1%;
+}
+
+
+.clients::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* как мне сбросить настройки для футера, ранее установленные для боди? я имею ввиду отступы справа и слева. 
+Чтобы футер их игрорировал?*/
+
+
+.footer-content {
+	width: 100%;
+	height: 112px;
+	background-color: #7e7e7e;
+	margin-top: 20px;
+	padding-left: 10px;
+}
+
+.twitter {
+	width: 300px;
+	float: left;
+}
+
+.tw1 {
+	margin-bottom: 0;
+	color: #ffffff;
+	font-size: 13px;
+}
+
+.hr-line {
+	color: #919191;
+	margin: 0;
+}
+
+.date {
+	color: #b4aeae;
+	font-size: 13px;
+}
+
+.tw2 {
+	color: #dbdbdb;
+	font-size: 13px;
+	margin-top: 4px;
+}
+
+.sitemap {
+	width: 150px;
+	margin-left: 20px;
+	float: left;
+}
+
+.list {
+	float: left;
+	width: 75px;
+}
+
+.list p {
+	color:#dbdbdb;
+	font-size: 15px; 
+	margin: 5px 0 0 0 ;
+}
+
+.social {
+	width: 130px;
+	float: left;
+		margin-left: 20px;
+}

@@ -1,0 +1,459 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body{
+  width: 1260px;
+  height: 1223px;
+  font-family: 'Oswald', sans-serif;
+  background-image: url(../images/background.png);
+}
+
+.wrapper{
+  width: 960px;
+  margin: 0 auto;
+}
+
+ .top-line{
+  width: 1260px;
+  height: 5px;
+  background-image: url(../images/top_line.png);
+}
+
+/*HEADER*/
+
+  header{
+  position: relative;
+  padding-top: 25px;
+  margin-bottom: 32px;
+}
+
+  header:after{
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.logo{
+  float: left;
+}
+
+.search-field {
+  float: right;
+}
+
+input{
+  width: 157px;
+  height: 30px;
+  margin-right: 42px;
+  background-color: #f3f3f3;
+  border: 1px solid #e7e7e7;
+}
+
+.go-button{
+  position: absolute;
+  top: 25px;
+  left: 917px;
+  width: 42px;
+  height: 26px;
+  padding-top: 6px;
+  font-size: 14px;
+  text-align: center;
+  color: #fefefe;
+  background-color: #29c5e6;
+}
+
+.search{
+  position: absolute;
+  top: 34px;
+  left: 771px;
+  font-family: Tahoma, Serif;
+  font-size: 12px;
+  color: #bbbbbb;
+}
+
+/*NAVIGATION*/
+
+.main-menu{
+  margin-top: 61px;
+  background-color: #f3f3f3;
+  border: 1px solid #e7e7e7;
+}
+
+.main-menu li{
+  width: 116px;
+  height: 38px;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-menu a{
+  padding: 8px;
+  display: block;
+  font-size: 14px;
+  color: #b2b2b2;
+}
+
+
+.main-menu a:hover{
+  background-color: #29c5e6;
+  color: #ffffff;
+}
+
+/*BANNER*/
+
+.banner{
+  margin-top: 30px;
+  position: relative;
+}
+
+.banner h1{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-weight: 300;
+  font-size: 42.13px;
+  color: #5a5a5a;
+}
+
+.banner h2{
+  position: absolute;
+  top: 89px;
+  left: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #b3b3b3;
+}
+
+/*NAVIGATION UNDER BANNER*/
+
+.menu{
+  margin-top: -5px;
+  height: 50px;
+  background-color: #f3f3f3;
+}
+
+.menu li{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu a{
+  display: block;
+  padding-top: 10px;
+  width: 225px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #9c9c9c;
+  text-transform: uppercase;
+}
+
+.menu a:hover{
+ color: #36c8e7;
+}
+
+.menu span{
+display: inline-block;
+width: 24px;
+height: 24px;
+margin-right: 12px;
+margin-left: 12px;
+font-size: 16px;
+font-weight: 300;
+text-align: center;
+background-color: #8f8f8f;
+color: #ffffff;
+}
+
+.menu span:hover{
+background-color: #29c5e6;
+}
+
+/*MAIN SECTION*/
+
+article{
+width: 940px;
+margin: 32px auto;
+}
+
+article:after{
+content:'';
+display: table;
+clear: both;
+}
+
+.left{
+  float: left;
+  width: 450px;
+}
+
+.square{
+  float: left;
+  width: 15px;
+  height: 15px;
+  background-color: #29c5e6;
+}
+
+h3{
+  float: left;
+  padding-left: 5px;
+  margin-top: -3px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #7e7e7e;
+  text-transform: uppercase;
+}
+
+.pattern{
+  float: right;
+  margin-top: -3px;
+}
+
+.image{
+  padding-top: 15px;
+  float: left;
+}
+
+.text p{
+  padding-top: 31px;
+  padding-left: 159px;
+  font-family: Tahoma;
+  font-size: 12px;
+  color: #8f8f8f;
+  text-align: justify;
+}
+
+.link{
+  padding-left: 157px;
+  padding-top: 11px;
+  font-family: Tahoma;
+  font-size: 12px;
+}
+
+.link a{
+  color: #525252;
+  text-decoration: underline;
+}
+
+.right {
+  float: right;
+  width: 470px;
+  margin-left: 20px;
+}
+
+.right p:last-child{
+  padding-top: 25px;
+  color: #525252;
+  font-family: Tahoma;
+  font-size: 12px;
+}
+
+/*SECTION*/
+
+section{
+  width: 940px;
+  margin: 31px auto;
+
+}
+
+section:after{
+content:'';
+display: table;
+clear: both;
+}
+
+.service{
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+.pattern-section img{
+  float: right;
+  height: 15px;
+  width: 189px;
+  margin-right: 10px;
+}
+
+.service p{
+  color: #8f8f8f;
+  font-family: Tahoma;
+  font-size: 12px;
+  padding-top: 25px;
+  text-align: left;
+  text-align: justify;
+}
+
+.service .link{
+  padding-left: 0;
+}
+
+.teams{
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+.teams .pattern-section img{
+  float: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.team-image {
+ padding: 3px 9px 3px 0px;
+ float: left;
+}
+
+
+h4{
+font-family: Tahoma;
+font-size: 11px;
+color: #525252;
+}
+
+.teams p{
+  padding-bottom: 5px;
+  color: #8f8f8f;
+  font-family: Tahoma;
+  font-size: 12px;
+}
+
+.support{
+  width: 300px;
+  float: left;
+}
+
+.support .pattern-section img{
+  padding-left: 10px;
+  width: 152px;
+}
+
+.support+p{
+  padding-top: 25px;
+  color: #8f8f8f;
+  font-family: Tahoma;
+  font-size: 12px;
+  text-align: justify;
+}
+
+/*OUR CLIENTS*/
+
+.clients {
+  padding-top: 10px;
+  height: 167px;
+}
+
+.pattern-clients{
+  padding-left: 100px;
+}
+
+.pattern-clients img{
+  width: 833px;
+  height: 15px;
+}
+
+.logos{
+  padding-top: 22px;
+}
+
+/*FOOTER*/
+footer{
+margin-top: 40px;
+background-color: #7e7e7e;
+}
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+  height: 112px;
+}
+
+.container:after{
+content:'';
+display: table;
+clear: both;
+}
+
+.feed{
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+h5{
+  padding-top: 15px;
+  margin-bottom: -18px;
+  font-family: Oswald, serif;
+  font-style: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.feed p{
+  font-family: Tahoma;
+  font-size: 11px;
+  color: #b4aeae;
+}
+
+.feed p:last-child{
+  font-family: Tahoma;
+  font-size: 11px;
+  color: #dbdbdb;
+}
+
+.sitemap{
+  width: 150px;
+  float: left;
+  margin-right: 18px;
+}
+
+.sitemap:after{
+content:'';
+display: table;
+clear: both;
+}
+
+.sitemap a{
+  color: #dbdbdb;
+}
+
+.sitemap-left{
+float: left;
+}
+
+.sitemap-right{
+float: right;
+padding-right: 20px
+}
+
+.sitemap p{
+  font-family: Tahoma;
+  font-size: 12px;
+}
+
+.social{
+  width: 130px;
+  float: left;
+}
+
+.logo-footer img{
+  padding-top: 23px;
+  padding-left: 166px;
+}
+
+.copyright{
+  padding-top: 20px;
+  font-family: Tahoma;
+  font-size: 10px;
+  color: #dbdbdb;
+  float: right;
+}
+
+.copyright span a{
+  color: #dbdbdb;
+  text-decoration: underline;
+}
