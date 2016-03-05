@@ -1,0 +1,105 @@
+> 'constructor/this' - http://stackoverflow.com/questions/9822561/why-is-this-in-an-anonymous-function-undefined-when-using-strict
+
+function myConstructor() {
+    this.a = 'foo';
+    this.b = 'bar';
+}
+
+myInstance     = new myConstructor(); // all cool, all fine. a and b were created in a new local object
+myBadInstance  = myConstructor(); // oh my gosh, we just created a, and b on the window objectOOP
+
+============
+> prototypes - https://learn.javascript.ru/prototype
+var animal = {
+  eats: true
+};
+
+var rabbit = {
+  jumps: true,
+  __proto__: animal
+};
+
+for (var key in rabbit) {
+  alert( key + " = " + rabbit[key] ); // выводит и "eats" и "jumps"
+}
+
+ hasOwnProperty
+
+ var animal = {
+   eats: true
+ };
+
+ var rabbit = {
+   jumps: true,
+   __proto__: animal
+ };
+
+ alert( rabbit.hasOwnProperty('jumps') ); // true: jumps принадлежит rabbit
+
+ alert( rabbit.hasOwnProperty('eats') ); // false: eats не принадлежит
+
+============
+> 'oop' - https://dikmax.name/post/oopjs-1/
+
+//inherit
+ChildClass.prototype = new ParentClass();
+
+// run parent constructor
+var tempCtor = function () {};
+tempCtor.prototype = ParentClass.prototype;
+ChildClass.prototype = new tempCtor();
+
+
+============
+> 'this contects' - https://habrahabr.ru/post/149516/
+
+var f = function() {
+    this.x = 5;
+    (function() {
+        this.x = 3;
+    })();
+    console.log(this.x);
+};
+
+var obj = {x: 4, m: function() {
+    console.log(this.x);
+}};
+
+
+f();
+new f();
+obj.m();
+new obj.m();
+f.call(f);
+obj.m.call(f);
+
+3
+5
+4
+undefined
+5
+5
+
+============
+> 'mixins' - https://learn.javascript.ru/mixins
+
+// примесь
+var sayHiMixin = {
+  sayHi: function() {
+    alert("Привет " + this.name);
+  },
+  sayBye: function() {
+    alert("Пока " + this.name);
+  }
+};
+
+// использование:
+function User(name) {
+  this.name = name;
+}
+
+// передать методы примеси
+for(var key in sayHiMixin) User.prototype[key] = sayHiMixin[key];
+
+// User "умеет" sayHi
+new User("Вася").sayHi(); // Привет Вася
