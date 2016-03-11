@@ -1,0 +1,64 @@
+реализовать функцию declare(className, superclass, props);
+где:
+className - название класса, принимает значение String | null;
+superclass - родительский класс(ы) (классы от которых наследуемся), принимает значение null | Object | Object[]
+props - методы реализуемого класса, принимает значение Object
+
+пример использования:
+
+declare('Animal', null, {
+  constructor: function(name) { this.name = name; },
+  say: function() { console.log(this.name); }
+});
+
+declare('Smarty', null, {
+  serve: function() { console.log('I am serving'); }
+})
+
+declare('Cat', Animal, {
+  run: function() { console.log('I am running'); };
+})
+
+declare('Dog', [Animal, Smarty], {
+  sit: function() { console.log('I am sitting'); }
+})
+
+var cat = new Animal('cat');
+var fiona = new Cat('Fiona');
+var rex = new Dog('Rex');
+
+cat.say(); // cat
+
+fiona.say(); // Fiona
+fiona.run(); // I am running
+
+rex.say(); // Rex
+rex.say('Somesing'); // Somesing
+rex.serve(); // I am serving
+rex.sit(); // I am sitting
+
+
+
+
+
+
+
+
+
+function declare(className, props) {
+  var classConstructor = function() {};
+
+  for (var method in props) {
+    classConstructor.prototype[method] = props[method];
+  }
+
+  window[className] = classConstructor;
+}
+
+declare('Test', {say: function() { console.log('say'); }});
+
+console.log(typeof Test);
+console.log(Test);
+
+var test = new Test();
+test.say();
