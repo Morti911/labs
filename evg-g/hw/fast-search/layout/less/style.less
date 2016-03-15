@@ -1,0 +1,676 @@
+//@import "../css/normalize.css";
+@import "../css/reset.css";
+@import "helpers.less";
+@import "variables";
+
+/*
+  NAVIGATION
+  1.0 GLOBAL
+A. HOME PAGE
+  1.1 TOP
+  1.2 HEADER
+  1.3 MENU
+  1.4 SEARCH & LOGO
+  1.5 BANNER
+  1.6 MAIN CONTENT
+  1.7 MAIN CONTENT TOP
+  1.8 MAIN CONTENT MIDDLE
+  1.9 MAIN CONTENT BOTTOM
+  1.1.0 FOOTER
+B. ABOUT US PAGE
+  2.1 TOP
+  2.2 MAIN CONTENT TOP
+  2.3 MAIN CONTENT MIDDLE
+  2.4 MAIN CONTENT BOTTOM
+C. PRODUCTS PAGE
+  3.1 MAIN CONTENT TOP
+D. BLOG PAGE
+  4.1 MAIN CONTENT TOP
+E. BLOG POST PAGE
+  5.1 MAIN CONTENT TOP
+F. CONTACT PAGE
+  6.1  MAIN CONTENT TOP
+*/
+
+/* 1.0 GLOBAL */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.menu-li-now {
+    background-color: #f44;
+}
+
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 16px;
+  color: #f33;
+  line-height: 22px;
+}
+
+
+/* A. HOME PAGE */
+/* 1.1 TOP */
+.top {
+  //background-color: #333;
+  //position: relative;
+}
+
+.wrapper-top {
+  background: linear-gradient(rgba(102, 51, 0, 0.45), rgba(102, 51, 0, 0.45)), url(../img/bg-top.jpg);
+  background-size: cover;
+  //opacity: 0.25;
+}
+
+/* 1.2 HEADER */
+.part-screen {
+  width: @wrapperWidth;
+  height: 100px;
+  background-color: #f33;
+  margin: 0 auto;
+}
+
+.all-screen {
+  height: 100px;
+  background-color: #f33;
+  margin: 0 auto;
+}
+
+/* 1.3 MENU */
+
+.size {
+  height: inherit;
+}
+
+.menu {
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  >li {
+    height: inherit;
+    float: left;
+    list-style-type: none;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      padding: 42px 20px;                 //задаем в процентах и плывет по разному
+      font-size: 16px;
+      color: #fff;
+    }
+      :hover {
+        background-color: #f66;
+      }
+   }
+}
+
+/* 1.4 SEARCH & LOGO */
+.search {
+  padding-left: 60px;
+  padding-top: 20px;
+}
+
+.icon-search {
+  text-decoration: none;
+  &:active + .invisibility {
+    visibility: visible;
+  }
+  &:active + .invisibility + .invisibility {
+    visibility: visible;
+  }
+    i {
+      color: #fff;
+    }
+}
+
+.invisibility {
+  padding-top: 12px;
+  visibility: hidden;
+}
+
+.logo {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+/* 1.5 BANNER */
+.wrapper-banner {
+  width: @wrapperWidth;
+  margin: 0 auto;
+}
+
+.banner-content {
+  padding-top: 240px;
+  padding-bottom: 10px;
+}
+
+.banner-title {
+  margin: 0 auto;
+  font-size: 64px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.banner-info {
+  margin: 0 auto;
+  padding-top: 40px;
+  max-width: 635px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 22px;
+}
+
+.banner-btn {
+  max-width: 250px;
+  margin: 0 auto;
+  padding-top: 85px;
+  padding-bottom: 158px;
+    a {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0;
+    border: 1px solid #fff;
+    background-color: rgba(51, 51, 51, 0.5);
+  }
+}
+
+/* 1.6 MAIN CONTENT */
+h3.main-content-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #666;
+  line-height: 22px;
+  padding-bottom: 15px;
+    span {
+      color: #f66;
+    }
+}
+
+/* 1.7 MAIN CONTENT TOP */
+.wrapper-main-top {
+  width: @wrapperWidth;
+  margin: 0 auto;
+}
+
+.main-top-content {
+  width: @wrapperWidth/2;
+  padding-top: 50px;
+    p {
+      font-size: 14px;
+      color: #333;
+      line-height: 22px;
+      padding-right: 14px;
+      text-align: left;
+      padding-bottom: 10px;
+      a {
+        color: #f33;
+      }
+    }
+}
+
+
+/* 1.8 MAIN CONTENT MIDDLE */
+.main-middle-bg {
+  background: url(../img/bg-main-middle1.jpg);
+  background-size: cover;
+  margin-top: 100px;
+}
+
+.main-middle {
+  background-color: rgba(255, 20, 20, 0.75);                       //????????????????????????????/
+//  background: url(../img/bg-main-middle1.jpg);
+//  background-color: #c63;                          ?????????????????????????????
+//  opacity: 0.7;                                    ???????????????????????????????
+//  background-size: cover;
+  .main-middle-wrapper {
+//  background-color: #ff5033;                       //????????????????????????????/
+//  opacity: 0.8;                                //??????????????????????????????
+    width: @wrapperWidth;
+    margin: 0 auto;
+    .main-middle-title {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 38px;
+      text-align: center;
+        h2 {
+          padding: 50px 0;
+          line-height: 22px;
+        }
+    }
+  }
+  .row {
+    padding-bottom: 60px;
+    .main-middle-content {
+      width: @wrapperWidth/4;
+      .main-middle-content-logo {
+        width: 50px;
+        height: 30px;
+        margin: 0 auto;
+      }
+      .main-middle-content-info {
+        height: 160px;
+        width: inherit;
+        overflow: hidden;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        padding: 35px 10px 60px;
+      }
+        p {
+          font-size: 14px;
+          line-height: 18px;
+        }
+    }
+  }
+}
+
+/* 1.9 MAIN CONTENT BOTTOM */
+.main-bottom {
+  background-color: #fff;
+  .wrapper-main-bottom {
+    width: @wrapperWidth;
+    margin: 0 auto;
+    .wrapper-gallery {
+      padding: 50px 0;
+      .row {
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+.gallery {
+  width: @wrapperWidth;
+  height: 160px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  .gallery-inner {
+    &>div.gallery-item {
+      float: left;
+    }
+    height: 100%;
+    width: 32768px;
+    margin-left: 0;
+    .gallery-item {
+      padding-right: 20px;
+      p {
+        padding-top: 8px;
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 22px;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+/* 1.1.0 FOOTER */
+.bg-footer {
+  background-color: #000;
+  .wrapper-footer {
+    width: @wrapperWidth;
+    margin: 0 auto;
+    padding: 37px 0;
+    .footer-block-1 {
+      width: @wrapperWidth/4;
+      .img-foot-block-1 {
+        width: 50px;
+        height: 50px;
+        padding-top: 30px;
+        padding-right: 10px;
+      }
+      .info-foot-block-1 {
+        font-size: 12px;
+        color: #666;
+        padding-top: 27px;
+        line-height: 17px;
+      }
+      .info-foot-block-1-p2 {
+        font-size: 12px;
+        color: #666;
+        padding-top: 18px;
+        padding-right: 1px;
+        line-height: 17px;
+        a {
+          color: #933;
+        }
+      }
+    }
+    .footer-block-2 {
+      width: @wrapperWidth/2;
+      .row-footer {
+        .col-2 {
+          width: 50%;
+          .img-foot-block-2 {
+            width: 50px;
+            height: 50px;
+            padding-top: 30px;
+            padding-right: 10px;
+          }
+          .info-foot-block-2 {
+            font-size: 12px;
+            color: #666;
+            padding-top: 30px;
+            padding-right: 13px;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+    .footer-block-3 {
+      width: @wrapperWidth/4;
+      .info-foot-block-3 {
+        font-size: 12px;
+        color: #666;
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-bottom: 17px;
+        line-height: 17px;
+      }
+      .address-foot-block-3 {
+        font-size: 12px;
+        color: #666;
+        line-height: 17px;
+      }
+      a {
+        color: #933;
+        font-size: 12px;
+      }
+      .social-network {
+        padding-top: 25px;
+        .social-network-icon {
+          margin-right: 15px;
+          i {
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* B. ABOUT US PAGE */
+/* 2.1 TOP */
+.bread-crumbs {
+  span {
+    font-size: 14px;
+    color: #fff;
+  }
+  .link{
+    a {
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+  .page-now {
+    font-size: 14px;
+    color: #fff;
+  }
+}
+
+.wrapper-main-top {
+  .col-3-75 {
+    width: 75%;
+  }
+  .col-1-25 {
+    width: 25%
+  }
+}
+
+/* 2.2 MAIN CONTENT TOP */
+.main-top-content {
+  .info-col-1-25 {
+    list-style-type: square;
+    padding-left: 18px;
+    &>li {
+      color: red;
+      padding-bottom: 10px;
+      font-size: 14px;
+      line-height: 22px;
+      span {
+        font-size: 14px;
+        color: #333;
+        line-height: 22px;
+        text-align: left;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+/* 2.3 MAIN CONTENT MIDDLE */
+.about-middle-bg {
+  background-image: url(../img/bg-middle-about.jpg);
+}
+
+/* 2.4 MAIN CONTENT BOTTOM */
+.gallery-about {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 15px;
+  .row {
+    padding-bottom: 30px;
+  }
+}
+
+.gallery-about-col-2 {
+  height: 190px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  .gallery-about-col-2-inner {
+    &>div.gallery-about-col-2-item {
+      float: left;
+    }
+    height: 100%;
+    width: 32768px;
+    margin-left: 0;
+    .gallery-about-col-2-item {
+      padding-right: 20px;
+      width: @wrapperWidth/2;
+      p {
+        font-size: 14px;
+        color: #333;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.second-article {
+  padding-top: 20px;
+}
+
+/* C. PRODUCTS PAGE */
+/* 3.1 MAIN CONTENT TOP */
+.row-products {
+  padding-bottom: 80px;
+}
+
+.col-2 {
+  width: 50%;
+  .product-discription {
+    .product-img {
+      width: 235px;
+      height: 130px;
+      padding-top: 20px;
+    }
+  }
+}
+
+/* D. BLOG PAGE */
+/* 4.1 MAIN CONTENT TOP */
+.gallery-blog {
+  height: 860px;
+  width: @wrapperWidth;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 50px 0 20px;
+  .gallery-blog-inner {
+    width: 32768px;              /* максимальная ширина бллока для интернет эксплорера */
+    height: 100%;
+    margin-left: 0;
+    .gallery-blog-item {
+      width: @wrapperWidth;
+      height: 100%;
+      box-sizing: border-box;
+      .row-gallery-blog-item {
+        height: 50%;
+        box-sizing: border-box;
+        .col-2 {
+          height: 100%;
+          box-sizing: border-box;
+          a {
+            text-decoration: none;
+          }
+          .blog-img {
+            width: 490px;
+            height: 238px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog-discription {
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.data-autor {
+  font-size: 12px;
+  color: #999;
+  line-height: 26px;
+  text-align: left;
+}
+
+.navigation-gallery {
+  margin: 0 auto;
+padding-left: 484px;
+}
+
+/* BLOG POST PAGE */
+/*5.1 MAIN CONTENT TOP */
+.top-content {
+  padding: 20px 0;
+  .blog-post-info {
+    font-size: 16px;
+    color: #333;
+    line-height: 26px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    a {
+      color: #f33;
+    }
+  }
+}
+
+.row-social {
+  padding-bottom: 10px;
+  .col-4 {
+    padding-right: 5px;
+  }
+}
+
+.img-blog-post {
+  width: @wrapperWidth;
+  height: 350px;
+}
+
+/* F. CONTACT PAGE */
+/* 6.1  MAIN CONTENT TOP */
+.row-main-top {
+  padding-bottom: 100px;
+}
+
+.form {
+  height: 350px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.field {
+  height: 45px;
+  width: 485px;
+  background-color: #ccc;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #999;
+  border: none;
+  text-indent: 15px;
+}
+
+.field-1 {
+  min-height: 180px;
+  max-height: 180px;
+  min-width: 481px;
+  max-width: 481px;
+  background-color: #ccc;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #999;
+  border: none;
+  text-indent: 15px;
+}
+
+.field-2 {
+  height: 45px;
+  width: 485px;
+  background-color: #f33;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.row-contact {
+  padding-top: 20px;
+  .col-2 {
+    box-sizing: border-box;
+    padding-left: 40px;
+    .contact-info {
+      font-size: 14px;
+      color: #333;
+      line-height: 22px;
+      padding-right: 14px;
+      text-align: left;
+      padding-bottom: 0;
+    }
+    .contact-info-last {
+      padding-top: 18px;
+      a {
+        color: #f33;
+      }
+    }
+  }
+}

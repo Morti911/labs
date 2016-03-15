@@ -9,15 +9,15 @@
   </head>
   <body>
     <!-- start wrapper -->
-    <div id="wrapper">
+    <div id="wrapper" class="clearfix">
       <!-- start top -->
       <div id="top">
         <div id="logo">
           <img src="image/logo/logoUp.png" alt="WhiteSquare" />
         </div>
         <div id="search">
-          <form id="form-search" action="#" method="post">
-            <input id="input-search" class="borbackgrey" type="text" name="request-search" placeholder="search">
+          <form id="form-search" class="clearfix" action="#" method="get">
+            <input id="input-search" class="borbackgrey" type="search" name="request-search" placeholder="search">
             <input class="btn-go" type="submit" name="go" value="go">
           </form>
         </div>
@@ -25,7 +25,7 @@
       <!-- end top -->
       <!-- start menu -->
       <div id="menu">
-        <ul class="borbackgrey">
+        <ul class="borbackgrey clearfix">
           <li>
             <a href="#">home</a>
           </li>
@@ -69,7 +69,7 @@
         <img src="image/banner-home-first.jpg" alt="" />
       </div>
       <div id="banner-nav" class="borbackgrey">
-        <ul class="b-n">
+        <ul class="b-n clearfix">
           <li>
             <a href="#">
               <span>1</span>
@@ -99,99 +99,105 @@
       <!-- end banner -->
       <!-- start about -->
       <div id="about" class="main-content">
-        <div class="row-1">
-          <span class="b-square">
-            <img src="image/squareblue.png" alt="" />
-          </span>
-          <span class="title-article">About WhiteSquare</span>
-          <span class="b-l">
-            <img src="image/g-l.png" alt="" />
-          </span>
-          <img class="g-square"src="image/square.png" alt="" />
-          <p class="articcle">
-            In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.
-          </p>
-          <br>
-          <a href="#">Read more</a>
+        <div class="clearfix">
+          <div class="col-2">
+            <span class="b-square">
+              <img src="image/squareblue.png" alt="" />
+            </span>
+            <span class="title-article">About WhiteSquare</span>
+            <span class="b-l">
+              <img src="image/g-l.png" alt="" />
+            </span>
+            <img class="g-square"src="image/square.png" alt="" />
+            <p class="articcle">
+              In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.
+            </p>
+            <a href="#">Read more</a>
+          </div>
+          <div class="col-2">
+            <span class="b-square">
+              <img src="image/squareblue.png" alt="" />
+            </span>
+            <span class="title-article">a word from OUR ceo</span>
+            <span class="b-l-2">
+              <img src="image/g-l.png" alt="" />
+            </span>
+            <img class="g-square"src="image/square.png" alt="" />
+            <p class="articcle">
+              “In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac.”
+            </p>
+            <a href="#">Yane Naumoski, CEO</a>
+          </div>
         </div>
-        <div class="row-1">
-          <span class="b-square">
-            <img src="image/squareblue.png" alt="" />
-          </span>
-          <span class="title-article">a word from OUR ceo</span>
-          <span class="b-l-2">
-            <img src="image/g-l.png" alt="" />
-          </span>
-          <img class="g-square"src="image/square.png" alt="" />
-          <p class="articcle">
-            “In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac.”
-          </p>
-          <br>
-          <a href="#">Yane Naumoski, CEO</a>
+        <div class="clearfix">
+          <div class="col-3 clearfix">
+            <span class="b-square">
+              <img src="image/squareblue.png" alt="" />
+            </span>
+            <span class="title-article">services</span>
+            <span class="b-l-3">
+              <img src="image/g-l.png" alt="" />
+            </span>
+            <p class="articcle">
+              “In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac.”
+            </p>
+            <a href="#">Read more</a>
+          </div>
+          <div class="col-3 clearfix">
+            <span class="b-square">
+              <img src="image/squareblue.png" alt="" />
+            </span>
+            <span class="title-article">our teams</span>
+            <span class="b-l-4">
+              <img src="image/g-l.png" alt="" />
+            </span>
+            <div class="clearfix">
+              <img class="g-square-small"src="image/square.png" alt="" />
+              <p class="title-small">Lorem Ipsum</p>
+              <p class="articcle-small">
+                In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nu
+              </p>
+            </div>
+            <div class="clearfix">
+              <img class="g-square-small"src="image/square.png" alt="" />
+              <p class="title-small">Lorem Ipsum</p>
+              <p class="articcle-small">
+                In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nu
+              </p>
+            </div>
+            <div class="clearfix">
+              <img class="g-square-small"src="image/square.png" alt="" />
+              <p class="title-small">Lorem Ipsum</p>
+              <p class="articcle-small">
+                In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nu
+              </p>
+            </div>
+          </div>
+          <div class="col-3 clearfix">
+            <span class="b-square">
+              <img src="image/squareblue.png" alt="" />
+            </span>
+            <span class="title-article">27/7/365 support</span>
+            <span class="b-l-5">
+              <img src="image/g-l.png" alt="" />
+            </span>
+            <p class="articcle">
+              “In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac.”
+            </p>
+            <a href="#">Read more</a>
+          </div>
         </div>
-        <div class="row-2">
-          <span class="b-square">
-            <img src="image/squareblue.png" alt="" />
-          </span>
-          <span class="title-article">services</span>
-          <span class="b-l-3">
-            <img src="image/g-l.png" alt="" />
-          </span>
-          <p class="articcle">
-            “In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac.”
-          </p>
-          <br>
-          <br>
-          <a href="#">Read more</a>
-        </div>
-        <div class="row-2">
-          <span class="b-square">
-            <img src="image/squareblue.png" alt="" />
-          </span>
-          <span class="title-article">our teams</span>
-          <span class="b-l-4">
-            <img src="image/g-l.png" alt="" />
-          </span>
-          <img class="g-square-small"src="image/square.png" alt="" />
-          <p class="title-small">Lorem Ipsum</p>
-          <p class="articcle-small">
-            In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nu
-          </p>
-          <img class="g-square-small"src="image/square.png" alt="" />
-          <p class="title-small">Lorem Ipsum</p>
-          <p class="articcle-small">
-            In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nu
-          </p>
-          <img class="g-square-small"src="image/square.png" alt="" />
-          <p class="title-small">Lorem Ipsum</p>
-          <p class="articcle-small">
-            In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nu
-          </p>
-        </div>
-        <div class="row-2">
-          <span class="b-square">
-            <img src="image/squareblue.png" alt="" />
-          </span>
-          <span class="title-article">27/7/365 support</span>
-          <span class="b-l-5">
-            <img src="image/g-l.png" alt="" />
-          </span>
-          <p class="articcle">
-            “In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac.”
-          </p>
-          <br>
-          <br>
-          <a href="#">Read more</a>
-        </div>
-        <div class="row-3">
-          <span class="b-square">
-            <img src="image/squareblue.png" alt="" />
-          </span>
-          <span class="title-article">Our clients</span>
-          <span class="b-l-6">
-            <img src="image/g-l.png" alt="" />
-          </span>
-          <img class="clients-logo" src="image/clients.png" alt="" />
+        <div class="clearfix">
+          <div class="col-1">
+            <span class="b-square">
+              <img src="image/squareblue.png" alt="" />
+            </span>
+            <span class="title-article">Our clients</span>
+            <span class="b-l-6">
+              <img src="image/g-l.png" alt="" />
+            </span>
+            <img class="clients-logo" src="image/clients.png" alt="" />
+          </div>
         </div>
       </div>
       <!-- end about -->
@@ -199,7 +205,7 @@
     <!-- end wrapper -->
     <!-- start footer -->
     <div id="footer">
-      <div class="footer-wrap">
+      <div class="footer-wrap clearfix">
         <div class="foot-col-1">
           <h3 class="foot-h3">Twitter feed</h3>
           <hr class="foot-line">
@@ -212,14 +218,14 @@
           <h3 class="foot-h3">Sitemap</h3>
           <hr class="foot-line">
           <ul class="map">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
           </ul>
           <ul class="map map-2">
-            <li>Partners</li>
-            <li>Support</li>
-            <li>Contact</li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
         <div class="foot-col-2">

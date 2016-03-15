@@ -28,3 +28,41 @@
 .background(@color) {
   background: @color;
 }
+    // выбор разных цветов фона в зависимости от цвета шрифта
+.mixin (@a) when (lightness(@a) >= 50%) {
+  background-color: black;
+}
+
+.mixin (@a) when (lightness(@a) < 50%) {
+  background-color: white;
+}
+
+.mixin (@a) {
+  color: @a;
+}
+
+.mixin (@a, @b) {
+  color: @a;
+  background-color: @b;
+}
+  // ---------------------------------------------------
+
+// Счетчик
+
+.loop(@counter) when(@counter>0) {
+  .loop((@counter-1));
+  width: 10px* @counter;
+}
+
+   /* вывод будет
+   div {
+    width: 10px;
+    width: 20px;
+    width: 30px;
+    width: 40px;
+    width: 50px;
+ }
+
+  */
+
+  //-------------------------------------
