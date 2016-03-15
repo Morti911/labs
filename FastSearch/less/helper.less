@@ -1,0 +1,123 @@
+/*-------------------Helper--------------------*/
+
+.clearfix{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3{
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.red{
+    color: @red;
+}
+
+.row{
+	width:100%;
+}
+
+/*------------------Grid Loop--------------------------*/
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+  .col-md-@{i} {
+    width: (@i * @col-md-1);
+  }
+  .generate-columns(@n, (@i + 1));
+}
+
+.generate-columns(12);
+/*---------------------End------------------------------*/
+
+.col-md-12{
+	margin: @col-margin;
+	font-size: 0;
+}
+
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11{
+	display: inline-block;
+	font-size: 14px;
+}
+
+.contacts {
+    .address {
+        li:last-child{
+    margin-top: 25px;
+        }
+    }
+}
+
+.left{
+	float: left;
+}
+.right{
+	float:right;
+}
+
+ul{ 
+	li{
+	list-style: none;
+	display: inline-block;
+	}
+}
+
+body{
+	overflow-x: hidden;
+	background-color: white;
+	font-family:  Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.banner-helper(){
+	position: absolute;
+	top:0;
+	left: 50%;
+	transform: translateX(-@banner-width/2);
+	width: @banner-width;
+	margin: @banner-margin;
+}
+
+.nav-fixed(){
+	z-index: 10;
+	position: fixed;
+	top:0;
+	left: 50%;
+	transform: translateX(-500px);
+}
+
+.nav-static(){
+	position: absolute;
+	top:0;
+	left: 50%;
+	transform: translateX(-500px);
+	z-index: 10;
+	
+}
+
+.nav-full-width(){
+	width:100%;
+}
+
+.input-box(){
+    width: 490px;
+    height: 45px;
+    border-style: none;
+//    display: block;
+}

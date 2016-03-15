@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.min.css">
+</head>
+<body>
+   <nav class="main-nav">
+        <form class="left search-form" action="search.php" method="get" name="search-form">
+           <div class="table">
+				<input type="search" class="cell search-field" id="search-input"  name="search-field[]" placeholder="Search...">
+           </div>
+            <label for="search-input"><b>fast</b>search</label>
+        </form>
+        <ul class="right nav-list">
+            <li><a href="about.html" target="_self">about</a></li>
+            <li><a href="products.html" target="_self">products</a></li>
+            <li><a href="blog.html" target="_self">blog</a></li>
+            <li><a href="contact.html" target="_self">contact</a></li>
+        </ul>
+    </nav>
+   <div class="row-grey short">
+    	<div class="banner-1">
+		<header>
+				<span class="location"><a href="index.html" target="_self">Home</a> / Contacts</span>  
+		</header>
+   		</div>
+    </div>
+    <main class="row">
+       <div class="contacts col-md-12 table">
+        <section class="col-md-6 cell">
+            <h2>Say hi</h2>
+            <p>Curabitur suscipit lorem in turpis rutrum facilisis. Sed risus erat, varius et orci non, eleifend ultricies tortor.</p>
+            <form class="message-form" action="comments.php" method="post" name="message-form[]">
+                <input type="text" name="full-name" placeholder="Full name" required>
+                <input type="text" name="e-mail" placeholder="E-mail" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <input type="submit" name="send-message" value="submit">
+            </form>
+        </section>
+        <section class="col-md-6 cell">
+            <h2>Location</h2>
+            <!--              Googl maps embed                -->
+            <div style="width:490px;overflow:hidden;height:240px;max-width:100%;"><div id="gmap_display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=бизнес+центр+стенд&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="embedded-map-code" href="https://www.interserver-coupons.com" id="get-data-for-map">interserver coupon</a><style>#gmap_display .text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div><script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=e8561905-7e11-c9cb-f452-52bb7ff51c0d&c=embedded-map-code&u=1454515796" defer="defer" async="async"></script>
+            <!--             End of Google maps             -->
+            <ul class="address left">
+                <li>154 Street Name 242</li>
+                <li>Cityname, 12345</li><br>
+                <li>Country</li>
+                <li>Phone: ++1 234 56789</li>
+                <li>Mobile: ++9 876 54321</li>
+                <li><a class="red" href="mailto:info.city@domaine.com">info.city@domainame.com</a></li>
+            </ul>
+            <ul class="address right">
+                <li>154 Street Name 242</li>
+                <li>Cityname 2, 12345</li><br>
+                <li>Country 2</li>
+                <li>Phone: ++1 234 56789</li>
+                <li>Mobile: ++9 876 54321</li>
+                <li><a class="red" href="mailto:info.city@domaine.com">info.city@domainame.com</a></li>
+            </ul>
+        </section>
+       </div>
+    </main>
+   <footer>
+        <aside class="col-md-12">
+            <section class="col-md-3">
+                <h3>About <span class="
+                red">us</span></h3>
+                <img class="img-preview" src="../img/footer-pic3.jpg" alt="#">
+                <p>Sed erat justo, dapibus sit amet dictum sit amet, condimentum vel erat. Maecenas mollis.</p>
+                <p>Duis suscipit venenatis sapien, et dictum ligula dignissim non. Nunc sapien justo, faucibus commodo ullamcorper nec, tempor vitae quam. <a class="red" href="">Read more</a></p>
+            </section>
+            <section class="col-md-6">
+              <div class="col-md-3"> 
+                <h3>From our <span class="red">blog</span></h3>
+                <img class="img-preview" src="../img/footer-pic2.jpg" alt="#">
+                <p>Vestibulum volutpat sollicitudin consequat. Nam nec elit rutrum, sollicitudin ante nec...</p><br>
+                <img class="img-preview" src="../img/footer-pic1.jpg" alt="#">
+                <p>Vestibulum volutpat sollicitudin consequat. Nam nec elit rutrum, sollicitudin ante nec...</p>
+			  </div>
+              <div class="col-md-3"> 
+                <img class="img-preview" src="../img/footer-pic4.jpg" alt="#">
+                <p>Praesent ac neque laoreet, sagittis ipsum vitae, ullamcorper nibh. Morbi tum...</p><br>
+                <img class="img-preview" src="../img/footer-pic5.jpg" alt="#">
+                <p>Praesent ac neque laoreet, sagittis ipsum vitae, ullamcorper nibh. Morbi tum...</p>
+            </div>
+			</section> 
+                <section class="col-md-3">
+                   <h3>our <span class="red">location</span></h3>
+                      <p>Suspendisse ullamcorper diam ex.</p><br>
+                       	<address>
+							154 Street Name 242<br>
+							Cityname, Country<br>
+							<a class="red" href="mailto:info@domainame.com">info@domainame.com</a>
+                    	</address>
+                    <ul class="social-media">
+                        <li><a href="http://twitter.com" target="_blank"><img src="../img/Twitter.png" alt="twitter"></a></li>
+                        <li><a href="http://www.facebook.com" target="_blank"><img src="../img/Facebook.png" alt="facebook"></a></li>
+                        <li><a href="http://plus.google.com" target="_blank"><img src="../img/Google+.png" alt="google+"></a></li>
+                        <li><a href="http://www.pinterest.com" target="_blank"><img src="../img/Pinterest.png" alt="pinterest"></a></li>
+                    </ul>
+                </section>
+        </aside>
+    </footer>
+</body>
+</html>
