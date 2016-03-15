@@ -7,7 +7,6 @@
 
 body{
   width: 1260px;
-  height: 1223px;
   font-family: 'Oswald', sans-serif;
   background-image: url(../images/background.png);
 }
@@ -26,7 +25,6 @@ body{
 /*HEADER*/
 
   header{
-  position: relative;
   padding-top: 25px;
   margin-bottom: 32px;
 }
@@ -45,34 +43,24 @@ body{
   float: right;
 }
 
-input{
-  width: 157px;
-  height: 30px;
-  margin-right: 42px;
+ input[type="search"]{
+  width: 158px;
+  height: 32px;
+  margin-right: -4px;
+  padding-left: 10px;
   background-color: #f3f3f3;
   border: 1px solid #e7e7e7;
-}
-
-.go-button{
-  position: absolute;
-  top: 25px;
-  left: 917px;
-  width: 42px;
-  height: 26px;
-  padding-top: 6px;
-  font-size: 14px;
-  text-align: center;
-  color: #fefefe;
-  background-color: #29c5e6;
-}
-
-.search{
-  position: absolute;
-  top: 34px;
-  left: 771px;
-  font-family: Tahoma, Serif;
   font-size: 12px;
   color: #bbbbbb;
+}
+
+input[type="submit"]{
+  width: 42px;
+  height: 32px;
+  font-size: 14px;
+  color: #fefefe;
+  background-color: #29c5e6;
+  border: none;
 }
 
 /*NAVIGATION*/
@@ -81,22 +69,24 @@ input{
   margin-top: 61px;
   background-color: #f3f3f3;
   border: 1px solid #e7e7e7;
+
 }
 
 .main-menu li{
-  width: 116px;
-  height: 38px;
+  width: 117px;
   display: inline-block;
   text-align: center;
 }
 
 .main-menu a{
-  padding: 8px;
+  padding: 9px 0;
   display: block;
   font-size: 14px;
   color: #b2b2b2;
 }
-
+.main-menu a:last-child{
+  margin-right: -3px;
+}
 
 .main-menu a:hover{
   background-color: #29c5e6;
@@ -107,22 +97,20 @@ input{
 
 .banner{
   margin-top: 30px;
-  position: relative;
+  height: 280px;
+  background-image: url('../images/banner_image.jpg');
 }
 
 .banner h1{
-  position: absolute;
-  top: 40px;
-  left: 40px;
+  padding-top: 22px;
+  padding-left: 38px;
   font-weight: 300;
   font-size: 42.13px;
   color: #5a5a5a;
 }
 
 .banner h2{
-  position: absolute;
-  top: 89px;
-  left: 40px;
+  padding-left: 38px;
   font-size: 20px;
   font-weight: 300;
   color: #b3b3b3;
