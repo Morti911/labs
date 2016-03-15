@@ -1,0 +1,72 @@
+.center {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.font-style-light {
+	font: 64px "OpenSansLight", sans-serif;
+	color: @white-font;
+	text-transform: uppercase;
+}
+
+.font-style-1() {
+	font: 16px "OpenSansRegular", sans-serif;
+	color: @white-font;
+	text-transform: uppercase;
+}
+
+.font-style-2() {
+	font: 22px "OpenSansBold", sans-serif;
+	color: @dark-font;
+	text-transform: uppercase;
+}
+
+.font-style-3() {
+	font: 14px "OpenSansRegular", sans-serif;
+	color: @dark-font;
+}
+
+.font-style-4() {
+	.font-style-2;
+	font-size: 18px;
+	color: @white-font;
+}
+
+.hover-style() {
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+		-ms-transition: all .25s linear;
+		 -o-transition: all .25s linear;
+			transition: all .25s linear;
+}
+
+.border() {
+	border: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.font-style-footer() {
+	.font-style-3;
+	color: @grey-font;
+	font-size: 12px;
+}
+
+.font-style-form() {
+	.font-style-footer;
+	font-size: 15px;
+}
+
+.padding-v(@padding-top; @padding-bottom) {
+	padding-top: @padding-top;
+	padding-bottom: @padding-bottom;
+}
+
+.margin-v(@margin-top; @margin-bottom) {
+	margin-top: @margin-top;
+	margin-bottom: @margin-bottom;
+}
+
+.size(@width; @height) {
+	width: @width;
+	height: @height;
+}

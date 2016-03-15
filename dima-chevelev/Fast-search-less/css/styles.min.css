@@ -1,0 +1,585 @@
+@import "../css/reset.css";
+
+.center {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.font-style-light {
+  font: 64px OpenSansLight,sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family:OpenSansRegular;src:url(../fonts/OpenSans-Regular-webfont.ttf);
+}
+
+@font-face {
+  font-family:OpenSansLight;src:url(../fonts/OpenSans-Light-webfont.ttf);
+}
+
+@font-face {
+  font-family:OpenSansBold;src:url(../fonts/OpenSans-Bold-webfont.ttf);
+}
+
+header.header-page {
+  background: url(../img/bg-header.jpg);
+  background-color: #2a0e0e;
+  background-blend-mode: exclusion;
+  background-size: cover;
+}
+
+header.header-page .nav-pannel {
+  display: inline-block;
+  background-color: #e74c3c;
+  padding: 20px 0 20px 20px;
+  width: 100%;
+}
+
+header.header-page .nav-pannel input {
+  border-style: none;
+  background-color: #e74c3c;
+  height: 60px;
+  width: 200px;
+  color: #e74c3c;
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+}
+
+header.header-page .nav-pannel input::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+
+header.header-page .nav-pannel input:hover {
+  cursor: pointer;
+}
+
+header.header-page .nav-pannel input:focus {
+  background-color: #f29f97;
+  background-image: none;
+  height: 30px;
+  margin: 15px 0 15px 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+header.header-page .nav-pannel ul {
+  padding-top: 20px;
+}
+
+header.header-page .nav-pannel ul li a {
+  font: 16px OpenSansRegular,sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 39px 20px;
+}
+
+header.header-page .nav-pannel ul li a:hover {
+  background-color: #ed7669;
+  -webkit-transition: all .25s linear;
+  -moz-transition: all .25s linear;
+  -ms-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+header.header-page h1 {
+  font: 64px OpenSansLight,sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 175px;
+}
+
+header.header-page h2 {
+  font: 14px OpenSansRegular;
+  color: #fff;
+  line-height: 22px;
+  margin-top: 45px;
+  padding: 0 150px;
+}
+
+header.header-page .button {
+  display: inline-block;
+  padding: 14px 55px 14px 55px;
+  background-color: rgba(255,255,255,.1);
+  border: solid 1px rgba(255,255,255,.5);
+  font: 16px OpenSansRegular,sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 75px 0 110px 0;
+}
+
+header.header-page .button:hover {
+  background-color: rgba(255,255,255,.5);
+  -webkit-transition: all .25s linear;
+  -moz-transition: all .25s linear;
+  -ms-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+header.header-page p.header-page-nav,header.header-page p.header-page-nav a {
+  font: 14px OpenSansRegular,sans-serif;
+  color: #3e3e3e;
+  color: #fff;
+  text-align: left;
+  padding-top: 120px;
+  padding-bottom: 10px;
+}
+
+main section.blog .center,main section.blogpost .center,main section.contact .center,main section.description .center,main section.products .center,main section.proof .center {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+main section.blog .center article.col-md-6,main section.blogpost .center article.col-md-6,main section.contact .center article.col-md-6,main section.description .center article.col-md-6,main section.products .center article.col-md-6,main section.proof .center article.col-md-6 {
+  width: 49%;
+  text-align: left;
+  margin-right: 20px;
+}
+
+main section.blog .center article.col-md-6:nth-child(even),main section.blogpost .center article.col-md-6:nth-child(even),main section.contact .center article.col-md-6:nth-child(even),main section.description .center article.col-md-6:nth-child(even),main section.products .center article.col-md-6:nth-child(even),main section.proof .center article.col-md-6:nth-child(even) {
+  margin-right: 0;
+}
+
+main section.blog .center article.col-md-6 .img-products,main section.blogpost .center article.col-md-6 .img-products,main section.contact .center article.col-md-6 .img-products,main section.description .center article.col-md-6 .img-products,main section.products .center article.col-md-6 .img-products,main section.proof .center article.col-md-6 .img-products {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+main section.blog .center article.col-md-6 .img-products .col-md-3,main section.blogpost .center article.col-md-6 .img-products .col-md-3,main section.contact .center article.col-md-6 .img-products .col-md-3,main section.description .center article.col-md-6 .img-products .col-md-3,main section.products .center article.col-md-6 .img-products .col-md-3,main section.proof .center article.col-md-6 .img-products .col-md-3 {
+  margin-right: 20px;
+}
+
+main section.blog .center article.col-md-6 .img-products .col-md-3:last-child,main section.blogpost .center article.col-md-6 .img-products .col-md-3:last-child,main section.contact .center article.col-md-6 .img-products .col-md-3:last-child,main section.description .center article.col-md-6 .img-products .col-md-3:last-child,main section.products .center article.col-md-6 .img-products .col-md-3:last-child,main section.proof .center article.col-md-6 .img-products .col-md-3:last-child {
+  margin-right: 0;
+}
+
+main section.blog .center article.col-md-6 button,main section.blog .center article.col-md-6 input,main section.blog .center article.col-md-6 textarea,main section.blogpost .center article.col-md-6 button,main section.blogpost .center article.col-md-6 input,main section.blogpost .center article.col-md-6 textarea,main section.contact .center article.col-md-6 button,main section.contact .center article.col-md-6 input,main section.contact .center article.col-md-6 textarea,main section.description .center article.col-md-6 button,main section.description .center article.col-md-6 input,main section.description .center article.col-md-6 textarea,main section.products .center article.col-md-6 button,main section.products .center article.col-md-6 input,main section.products .center article.col-md-6 textarea,main section.proof .center article.col-md-6 button,main section.proof .center article.col-md-6 input,main section.proof .center article.col-md-6 textarea {
+  width: 100%;
+  height: 45px;
+  padding: 10px 15px 10px;
+  display: inline-block;
+  font: 14px OpenSansRegular,sans-serif;
+  color: #3e3e3e;
+  color: #8a8a8a;
+  font-size: 12px;
+  font-size: 15px;
+  border-style: none;
+  background-color: #f7f7f7;
+  margin-bottom: 10px;
+}
+
+main section.blog .center article.col-md-6 input[type=text],main section.blogpost .center article.col-md-6 input[type=text],main section.contact .center article.col-md-6 input[type=text],main section.description .center article.col-md-6 input[type=text],main section.products .center article.col-md-6 input[type=text],main section.proof .center article.col-md-6 input[type=text] {
+  margin-top: 35px;
+}
+
+main section.blog .center article.col-md-6 textarea,main section.blogpost .center article.col-md-6 textarea,main section.contact .center article.col-md-6 textarea,main section.description .center article.col-md-6 textarea,main section.products .center article.col-md-6 textarea,main section.proof .center article.col-md-6 textarea {
+  height: 180px;
+}
+
+main section.blog .center article.col-md-6 button,main section.blogpost .center article.col-md-6 button,main section.contact .center article.col-md-6 button,main section.description .center article.col-md-6 button,main section.products .center article.col-md-6 button,main section.proof .center article.col-md-6 button {
+  background-color: #e74c3c;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+main section.blog .center article.col-md-6 iframe,main section.blogpost .center article.col-md-6 iframe,main section.contact .center article.col-md-6 iframe,main section.description .center article.col-md-6 iframe,main section.products .center article.col-md-6 iframe,main section.proof .center article.col-md-6 iframe {
+  margin-bottom: 30px;
+}
+
+main section.blog .center article.col-md-6 .adress-1,main section.blogpost .center article.col-md-6 .adress-1,main section.contact .center article.col-md-6 .adress-1,main section.description .center article.col-md-6 .adress-1,main section.products .center article.col-md-6 .adress-1,main section.proof .center article.col-md-6 .adress-1 {
+  margin-right: 100px;
+}
+
+main section.blog .center h3,main section.blogpost .center h3,main section.contact .center h3,main section.description .center h3,main section.products .center h3,main section.proof .center h3 {
+  font: 22px OpenSansBold,sans-serif;
+  color: #3e3e3e;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+main section.blog .center h3 span,main section.blogpost .center h3 span,main section.contact .center h3 span,main section.description .center h3 span,main section.products .center h3 span,main section.proof .center h3 span {
+  color: #e74c3c;
+}
+
+main section.blog .center p,main section.blogpost .center p,main section.contact .center p,main section.description .center p,main section.products .center p,main section.proof .center p {
+  display: inline-block;
+  font: 14px OpenSansRegular,sans-serif;
+  color: #3e3e3e;
+}
+
+main section.blog .center p a,main section.blogpost .center p a,main section.contact .center p a,main section.description .center p a,main section.products .center p a,main section.proof .center p a {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+main section.blog .center p span.redbold,main section.blogpost .center p span.redbold,main section.contact .center p span.redbold,main section.description .center p span.redbold,main section.products .center p span.redbold,main section.proof .center p span.redbold {
+  color: #e74c3c;
+  font-family: OpenSansBold;
+}
+
+main section.blog .center p span.italic,main section.blogpost .center p span.italic,main section.contact .center p span.italic,main section.description .center p span.italic,main section.products .center p span.italic,main section.proof .center p span.italic {
+  font-style: italic;
+}
+
+main section.blog .center p span.darkbold,main section.blogpost .center p span.darkbold,main section.contact .center p span.darkbold,main section.description .center p span.darkbold,main section.products .center p span.darkbold,main section.proof .center p span.darkbold {
+  font-family: OpenSansBold;
+}
+
+main section.blog .center span.author,main section.blogpost .center span.author,main section.contact .center span.author,main section.description .center span.author,main section.products .center span.author,main section.proof .center span.author {
+  color: #8a8a8a;
+  font-size: 12px;
+}
+
+main section.blog .center article.col-md-9,main section.blogpost .center article.col-md-9,main section.contact .center article.col-md-9,main section.description .center article.col-md-9,main section.products .center article.col-md-9,main section.proof .center article.col-md-9 {
+  width: 73%;
+  text-align: left;
+  margin-right: 20px;
+}
+
+main section.blog .center article.col-md-3,main section.blogpost .center article.col-md-3,main section.contact .center article.col-md-3,main section.description .center article.col-md-3,main section.products .center article.col-md-3,main section.proof .center article.col-md-3 {
+  width: 23%;
+  text-align: left;
+}
+
+main section.blog .center article.col-md-3 ul,main section.blogpost .center article.col-md-3 ul,main section.contact .center article.col-md-3 ul,main section.description .center article.col-md-3 ul,main section.products .center article.col-md-3 ul,main section.proof .center article.col-md-3 ul {
+  list-style-type: square;
+  color: #e74c3c;
+  margin-top: 35px;
+}
+
+main section.blog .center article.col-md-3 ul li,main section.blogpost .center article.col-md-3 ul li,main section.contact .center article.col-md-3 ul li,main section.description .center article.col-md-3 ul li,main section.products .center article.col-md-3 ul li,main section.proof .center article.col-md-3 ul li {
+  margin-bottom: 16px;
+}
+
+main section.blog .center article.col-md-3 ul li:last-child,main section.blogpost .center article.col-md-3 ul li:last-child,main section.contact .center article.col-md-3 ul li:last-child,main section.description .center article.col-md-3 ul li:last-child,main section.products .center article.col-md-3 ul li:last-child,main section.proof .center article.col-md-3 ul li:last-child {
+  margin-bottom: 0;
+}
+
+main section.blog .center article.col-md-3 ul li span,main section.blogpost .center article.col-md-3 ul li span,main section.contact .center article.col-md-3 ul li span,main section.description .center article.col-md-3 ul li span,main section.products .center article.col-md-3 ul li span,main section.proof .center article.col-md-3 ul li span {
+  font: 14px OpenSansRegular,sans-serif;
+  color: #3e3e3e;
+}
+
+main section.blog .center article.blogpost-post,main section.blogpost .center article.blogpost-post,main section.contact .center article.blogpost-post,main section.description .center article.blogpost-post,main section.products .center article.blogpost-post,main section.proof .center article.blogpost-post {
+  text-align: left;
+}
+
+main section.blog .center article.blogpost-post h3,main section.blogpost .center article.blogpost-post h3,main section.contact .center article.blogpost-post h3,main section.description .center article.blogpost-post h3,main section.products .center article.blogpost-post h3,main section.proof .center article.blogpost-post h3 {
+  margin-bottom: 0;
+}
+
+main section.blog .center article.blogpost-post span.author,main section.blogpost .center article.blogpost-post span.author,main section.contact .center article.blogpost-post span.author,main section.description .center article.blogpost-post span.author,main section.products .center article.blogpost-post span.author,main section.proof .center article.blogpost-post span.author {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a p,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a p,main section.contact .center article.blogpost-post .blogpost-post-social-links a p,main section.description .center article.blogpost-post .blogpost-post-social-links a p,main section.products .center article.blogpost-post .blogpost-post-social-links a p,main section.proof .center article.blogpost-post .blogpost-post-social-links a p {
+  color: #fff;
+  margin-left: 8px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.tw-bg,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.tw-bg,main section.contact .center article.blogpost-post .blogpost-post-social-links a.tw-bg,main section.description .center article.blogpost-post .blogpost-post-social-links a.tw-bg,main section.products .center article.blogpost-post .blogpost-post-social-links a.tw-bg,main section.proof .center article.blogpost-post .blogpost-post-social-links a.tw-bg {
+  width: 95px;
+  height: 35px;
+  margin-right: 5px;
+  background-color: #28a9e1;
+  padding: 8px 10px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.tw-bg .tw-bg-ic,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.tw-bg .tw-bg-ic,main section.contact .center article.blogpost-post .blogpost-post-social-links a.tw-bg .tw-bg-ic,main section.description .center article.blogpost-post .blogpost-post-social-links a.tw-bg .tw-bg-ic,main section.products .center article.blogpost-post .blogpost-post-social-links a.tw-bg .tw-bg-ic,main section.proof .center article.blogpost-post .blogpost-post-social-links a.tw-bg .tw-bg-ic {
+  background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.fb-bg,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.fb-bg,main section.contact .center article.blogpost-post .blogpost-post-social-links a.fb-bg,main section.description .center article.blogpost-post .blogpost-post-social-links a.fb-bg,main section.products .center article.blogpost-post .blogpost-post-social-links a.fb-bg,main section.proof .center article.blogpost-post .blogpost-post-social-links a.fb-bg {
+  width: 95px;
+  height: 35px;
+  margin-right: 5px;
+  background-color: #28a9e1;
+  padding: 8px 10px;
+  background-color: #3a589c;
+  padding: 8px 4px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.fb-bg .tw-bg-ic,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.fb-bg .tw-bg-ic,main section.contact .center article.blogpost-post .blogpost-post-social-links a.fb-bg .tw-bg-ic,main section.description .center article.blogpost-post .blogpost-post-social-links a.fb-bg .tw-bg-ic,main section.products .center article.blogpost-post .blogpost-post-social-links a.fb-bg .tw-bg-ic,main section.proof .center article.blogpost-post .blogpost-post-social-links a.fb-bg .tw-bg-ic {
+  background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.fb-bg .fb-bg-ic,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.fb-bg .fb-bg-ic,main section.contact .center article.blogpost-post .blogpost-post-social-links a.fb-bg .fb-bg-ic,main section.description .center article.blogpost-post .blogpost-post-social-links a.fb-bg .fb-bg-ic,main section.products .center article.blogpost-post .blogpost-post-social-links a.fb-bg .fb-bg-ic,main section.proof .center article.blogpost-post .blogpost-post-social-links a.fb-bg .fb-bg-ic {
+  background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+  width: 11px;
+  height: 15px;
+  background-position: -17px 0;
+  margin-top: 2px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.g-bg,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.g-bg,main section.contact .center article.blogpost-post .blogpost-post-social-links a.g-bg,main section.description .center article.blogpost-post .blogpost-post-social-links a.g-bg,main section.products .center article.blogpost-post .blogpost-post-social-links a.g-bg,main section.proof .center article.blogpost-post .blogpost-post-social-links a.g-bg {
+  width: 95px;
+  height: 35px;
+  margin-right: 5px;
+  background-color: #28a9e1;
+  padding: 8px 10px;
+  background-color: #cb4638;
+  padding: 8px 6px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.g-bg .tw-bg-ic,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.g-bg .tw-bg-ic,main section.contact .center article.blogpost-post .blogpost-post-social-links a.g-bg .tw-bg-ic,main section.description .center article.blogpost-post .blogpost-post-social-links a.g-bg .tw-bg-ic,main section.products .center article.blogpost-post .blogpost-post-social-links a.g-bg .tw-bg-ic,main section.proof .center article.blogpost-post .blogpost-post-social-links a.g-bg .tw-bg-ic {
+  background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.g-bg .g-bg-ic,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.g-bg .g-bg-ic,main section.contact .center article.blogpost-post .blogpost-post-social-links a.g-bg .g-bg-ic,main section.description .center article.blogpost-post .blogpost-post-social-links a.g-bg .g-bg-ic,main section.products .center article.blogpost-post .blogpost-post-social-links a.g-bg .g-bg-ic,main section.proof .center article.blogpost-post .blogpost-post-social-links a.g-bg .g-bg-ic {
+  background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+  width: 15px;
+  height: 15px;
+  background-position: -32px 0;
+  margin-top: 2px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.p-bg,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.p-bg,main section.contact .center article.blogpost-post .blogpost-post-social-links a.p-bg,main section.description .center article.blogpost-post .blogpost-post-social-links a.p-bg,main section.products .center article.blogpost-post .blogpost-post-social-links a.p-bg,main section.proof .center article.blogpost-post .blogpost-post-social-links a.p-bg {
+  width: 95px;
+  height: 35px;
+  margin-right: 5px;
+  background-color: #28a9e1;
+  padding: 8px 10px;
+  background-color: #cb4638;
+  padding: 8px 6px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.p-bg .tw-bg-ic,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.p-bg .tw-bg-ic,main section.contact .center article.blogpost-post .blogpost-post-social-links a.p-bg .tw-bg-ic,main section.description .center article.blogpost-post .blogpost-post-social-links a.p-bg .tw-bg-ic,main section.products .center article.blogpost-post .blogpost-post-social-links a.p-bg .tw-bg-ic,main section.proof .center article.blogpost-post .blogpost-post-social-links a.p-bg .tw-bg-ic {
+  background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.p-bg .g-bg-ic,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.p-bg .g-bg-ic,main section.contact .center article.blogpost-post .blogpost-post-social-links a.p-bg .g-bg-ic,main section.description .center article.blogpost-post .blogpost-post-social-links a.p-bg .g-bg-ic,main section.products .center article.blogpost-post .blogpost-post-social-links a.p-bg .g-bg-ic,main section.proof .center article.blogpost-post .blogpost-post-social-links a.p-bg .g-bg-ic {
+  background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+  width: 15px;
+  height: 15px;
+  background-position: -32px 0;
+  margin-top: 2px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-social-links a.p-bg .p-bg-ic,main section.blogpost .center article.blogpost-post .blogpost-post-social-links a.p-bg .p-bg-ic,main section.contact .center article.blogpost-post .blogpost-post-social-links a.p-bg .p-bg-ic,main section.description .center article.blogpost-post .blogpost-post-social-links a.p-bg .p-bg-ic,main section.products .center article.blogpost-post .blogpost-post-social-links a.p-bg .p-bg-ic,main section.proof .center article.blogpost-post .blogpost-post-social-links a.p-bg .p-bg-ic {
+  background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+  width: 15px;
+  height: 15px;
+  background-position: -49px 0;
+  margin-top: 2px;
+}
+
+main section.blog .center article.blogpost-post .blogpost-post-img,main section.blogpost .center article.blogpost-post .blogpost-post-img,main section.contact .center article.blogpost-post .blogpost-post-img,main section.description .center article.blogpost-post .blogpost-post-img,main section.products .center article.blogpost-post .blogpost-post-img,main section.proof .center article.blogpost-post .blogpost-post-img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main section.products .center {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+main section.blog .col-md-6 p {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+main section.question-help {
+  background: url(../img/bg-main-help.jpg) no-repeat;
+}
+
+main section.question-us {
+  background: url(../img/bg-main-us.jpg) no-repeat;
+}
+
+main section.question-help,main section.question-us {
+  background-color: #e74c3c;
+  background-blend-mode: soft-light;
+  background-size: cover;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+main section.question-help h3,main section.question-us h3 {
+  font: 64px OpenSansLight,sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 38px;
+}
+
+main section.question-help .help-item,main section.question-help .us-item,main section.question-us .help-item,main section.question-us .us-item {
+  margin-top: 55px;
+}
+
+main section.question-help .help-item .col-md-3,main section.question-help .us-item .col-md-3,main section.question-us .help-item .col-md-3,main section.question-us .us-item .col-md-3 {
+  display: inline-block;
+  width: 24%;
+  padding-top: 50px;
+  margin-right: 9px;
+}
+
+main section.question-help .help-item .col-md-3:last-child,main section.question-help .us-item .col-md-3:last-child,main section.question-us .help-item .col-md-3:last-child,main section.question-us .us-item .col-md-3:last-child {
+  margin-right: 0;
+}
+
+main section.question-help .help-item .col-md-3 p,main section.question-help .us-item .col-md-3 p,main section.question-us .help-item .col-md-3 p,main section.question-us .us-item .col-md-3 p {
+  font: 14px OpenSansRegular,sans-serif;
+  color: #3e3e3e;
+  color: #fff;
+  line-height: 1.2;
+}
+
+main section.question-help .help-item .download,main section.question-help .us-item .download,main section.question-us .help-item .download,main section.question-us .us-item .download {
+  background: url(../img/help1.png) no-repeat top center;
+}
+
+main section.question-help .help-item .signs,main section.question-help .us-item .signs,main section.question-us .help-item .signs,main section.question-us .us-item .signs {
+  background: url(../img/help2.png) no-repeat top center;
+}
+
+main section.question-help .help-item .caddyfull,main section.question-help .us-item .caddyfull,main section.question-us .help-item .caddyfull,main section.question-us .us-item .caddyfull {
+  background: url(../img/help3.png) no-repeat top center;
+}
+
+main section.question-help .help-item .battery,main section.question-help .us-item .battery,main section.question-us .help-item .battery,main section.question-us .us-item .battery {
+  background: url(../img/help4.png) no-repeat top center;
+}
+
+main section.question-help .us-item .col-md-3,main section.question-us .us-item .col-md-3 {
+  padding-top: 0;
+}
+
+main section.projects {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+main section.projects .center {
+  overflow: hidden;
+}
+
+main section.projects .center h3 {
+  font: 22px OpenSansBold,sans-serif;
+  color: #3e3e3e;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+main section.projects .center h3 span {
+  color: #e74c3c;
+}
+
+main section.projects .center .projects-inner {
+  width: 32768px;
+  height: 100%;
+}
+
+main section.projects .center .projects-inner figure.projects-slide {
+  float: left;
+  margin-right: 15px;
+}
+
+main section.projects .center .projects-inner figure.projects-slide figcaption {
+  font: 14px OpenSansRegular,sans-serif;
+  color: #3e3e3e;
+  text-align: left;
+  padding-top: 15px;
+}
+
+footer.footer-page {
+  background-color: #1f1f1f;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+footer.footer-page section.about,footer.footer-page section.blog,footer.footer-page section.location {
+  width: 24%;
+  text-align: left;
+  margin-right: 20px;
+}
+
+footer.footer-page section.about:last-child,footer.footer-page section.blog:last-child,footer.footer-page section.location:last-child {
+  margin-right: 0;
+}
+
+footer.footer-page section.about h3,footer.footer-page section.blog h3,footer.footer-page section.location h3 {
+  font: 22px OpenSansBold,sans-serif;
+  color: #3e3e3e;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+footer.footer-page section.about h3 span,footer.footer-page section.blog h3 span,footer.footer-page section.location h3 span {
+  color: #e74c3c;
+}
+
+footer.footer-page section.about .blog-item,footer.footer-page section.blog .blog-item,footer.footer-page section.location .blog-item {
+  width: 49%;
+  margin-right: 9px;
+}
+
+footer.footer-page section.about .blog-item:nth-child(odd),footer.footer-page section.blog .blog-item:nth-child(odd),footer.footer-page section.location .blog-item:nth-child(odd) {
+  margin-right: 0;
+}
+
+footer.footer-page section.about .about-item-img,footer.footer-page section.about .blog-item-img,footer.footer-page section.blog .about-item-img,footer.footer-page section.blog .blog-item-img,footer.footer-page section.location .about-item-img,footer.footer-page section.location .blog-item-img {
+  margin: 0 10px 10px 0;
+}
+
+footer.footer-page section.about p,footer.footer-page section.blog p,footer.footer-page section.location p {
+  font: 14px OpenSansRegular,sans-serif;
+  color: #3e3e3e;
+  color: #8a8a8a;
+  font-size: 12px;
+}
+
+footer.footer-page section.about .location-item a,footer.footer-page section.blog .location-item a,footer.footer-page section.location .location-item a {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+footer.footer-page section.about .location-item .social-footer,footer.footer-page section.blog .location-item .social-footer,footer.footer-page section.location .location-item .social-footer {
+  margin-top: 15px;
+}
+
+footer.footer-page section.about .location-item .social-footer a,footer.footer-page section.blog .location-item .social-footer a,footer.footer-page section.location .location-item .social-footer a {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/social-footer-sprites.png) no-repeat;
+}
+
+footer.footer-page section.about .location-item .social-footer .ic-tw,footer.footer-page section.blog .location-item .social-footer .ic-tw,footer.footer-page section.location .location-item .social-footer .ic-tw {
+  background-position: 0 0;
+}
+
+footer.footer-page section.about .location-item .social-footer .ic-fb,footer.footer-page section.blog .location-item .social-footer .ic-fb,footer.footer-page section.location .location-item .social-footer .ic-fb {
+  background-position: -17px 0;
+}
+
+footer.footer-page section.about .location-item .social-footer .ic-g,footer.footer-page section.blog .location-item .social-footer .ic-g,footer.footer-page section.location .location-item .social-footer .ic-g {
+  background-position: -34px 0;
+}
+
+footer.footer-page section.about .location-item .social-footer .ic-p,footer.footer-page section.blog .location-item .social-footer .ic-p,footer.footer-page section.location .location-item .social-footer .ic-p {
+  background-position: -51px 0;
+}
+
+footer.footer-page section.blog {
+  width: 48%;
+}
