@@ -1,0 +1,325 @@
+@import "normalize.css";
+@import "variables.less";
+@import "helpers.less";
+
+.baner {
+  width: 100%;
+  background-color: @color_baner;
+}
+
+
+.nav {
+  background-color: @color_nav;
+  .margings();
+  .clearfix();
+  position: fixed;
+  width: 600px;
+  left: 0;
+  right: 0;
+}
+
+/*убираем коменты с класса, указанного ниже и коментим указанный выше и
+ получаем меню навигации на весь экран
+ */
+
+/*
+.nav-wide {
+  background-color: @color_nav;
+  position: fixed;
+  width: 100%;
+}
+*/
+
+.img {
+  .pull_left();
+  height: 31px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.logo-container {
+  .pull_left();
+  .clearfix();
+  a {
+    display: block;
+    float: left;
+      }
+}
+
+.logo-container:hover input {
+  display: block;
+}
+
+.search {
+  display: none;
+  float: left;
+  margin-top: 11px;
+  margin-left: 4px;
+}
+
+.menu {
+  list-style: none;
+  .pull_right();
+  margin: 0;
+  height: 100%;
+}
+
+.navigation {
+  .pull_right();
+  font-size: 10px;
+}
+
+.nav-links {
+  display: block;
+  text-decoration: none;
+  color: @color_text1;
+  padding: 16px 16px 21px 16px;
+    &:hover {
+    background-color: @hover;
+    }
+}
+
+.baner-texts {
+  padding-bottom: 70px;
+  padding-top: 120px;
+  width: 600px;
+  .margings();
+}
+
+.cl_h1 {
+  .baner-text();
+  text-transform: uppercase;
+}
+
+ .cl_p {
+  .baner-text();
+  font-size: 10px;
+  margin-bottom: 30px;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.learn-more {
+  .margings();
+  width: 120px;
+  a {
+  text-decoration: none;
+  color: @color_text1;
+  background-color: #404040;
+  font-size: 10px;
+  padding: 10px 25px;
+}
+}
+
+
+.content {
+  width: 100%;
+  background-color: @color_text1;
+  padding-top: 45px;
+      padding-bottom: 25px;
+}
+
+.content-inner {
+  .margings();
+  .clearfix();
+  width:600px;
+}
+
+.article {
+  .pull_left();
+  margin-right: 8px;
+  width: 48%;
+  color: @color_text2;
+}
+
+.small {
+  .small-letters();
+}
+
+.big {
+  .big-letters();
+}
+
+.select {
+  color: @color_select;
+}
+
+.help {
+  width: 100%;
+  background-color: @color_help;
+    .help-in {
+      .pull_left();
+      width: 25%;
+
+    .help-icon {
+      height: 15px;
+      margin: auto;
+    }
+    .help-description {
+      .font();
+      color: @color_text1;
+      text-align: center;
+      padding: 5px;
+      margin: 0;
+    }
+    .help-icon-container {
+      padding-left: 39%;
+    }
+  }
+}
+
+.how {
+  color: @color_text1;
+  .margings();
+  width:600px;
+    p {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 17px;
+      padding-top: 20px;
+    }
+}
+
+.container {
+  .margings();
+  .clearfix();
+  width:600px;
+  padding: 20px 0 25px 0;
+}
+
+.projects {
+  width: 100%;
+  background-color: @color_text1;
+  padding: 40px 0 40px 0;
+}
+
+.projects-head {
+  .margings();
+  .clearfix();
+  padding: 10px 5px 5px 5px;
+  width:600px;
+}
+
+.projects-big {
+  .pull_left();
+  .big-letters();
+    h2 {
+      margin: 0;
+    }
+}
+
+.narrows {
+  .pull_right;
+  padding: 0 5px 0 5px;
+    img {
+        height: 11px;
+        cursor: pointer;
+    }
+}
+
+.gallery {
+  .margings();
+  width: 600px;
+  height: 100px;;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.gallery-inner {
+  width: 32768px;
+  height: 100%;
+  .clearfix();
+}
+
+.inner-container {
+  .blocks();
+  img {
+    width: 140px;
+  }
+}
+
+
+.footer {
+  width: 100%;
+  background-color: @color_footer;
+    .footer-inner {
+      .margings();
+      padding-top: 5px;
+      .clearfix();
+      width:600px;
+    }
+}
+
+.footer-block {
+  .blocks();
+}
+
+.footer-head {
+  .big-letters();
+  color: @color_text1;
+}
+
+.inner-text {
+  img {
+    float: left;
+    width: 25px;
+    padding: 3px;
+  }
+  p {
+    color: @color_footer_text;
+    .font();
+    margin: 0;
+  }
+  a {
+    color: @color_select;
+  }
+}
+
+.inner-text2 {
+  padding-top: 10px;
+  img {
+    float: left;
+    width: 25px;
+    padding: 3px;
+  }
+  p {
+    color: @color_footer_text;
+    .font();
+    margin: 0;
+  }
+}
+
+.inner-text3 {
+  padding-top: 28px;
+  img {
+    float: left;
+    width: 25px;
+    padding: 3px;
+  }
+  p {
+    color: @color_footer_text;
+    .font();
+    margin: 0;
+  }
+}
+
+.inner-text4 {
+  img {
+    float: left;
+    width: 25px;
+    padding: 3px;
+  }
+  p {
+    color: @color_footer_text;
+    .font();
+    }
+}
+
+.inner-text5 {
+  img {
+    float: left;
+    padding: 3px;
+    width: 10px;
+  }
+}
