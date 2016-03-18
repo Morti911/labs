@@ -3,7 +3,7 @@ body{
   background: url('../img/rockywall.png')
 }
 fieldset{
-  border: white;
+  border: 0;
 }
 form{
   padding-top: 10px;
