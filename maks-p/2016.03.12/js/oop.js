@@ -21,8 +21,11 @@ Shape.prototype.setCords = function(x, y) {
 };
 
 var ball = new Shape('ball');
+var ball22 = new Shape('ball22');
 
 console.log(ball.getName());
 console.log(ball.getCords());
 ball.setCords(1,1);
+ball22.setCords(22,22);
 console.log(ball.getCords());
+console.log(ball22.getCords());

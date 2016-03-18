@@ -1,6 +1,7 @@
 'use strict';
 
 function Animal(name) {
+  var lastname = 'animal';
   this.name = name;
   this.birhday = new Date();
 }

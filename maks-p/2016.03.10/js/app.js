@@ -1,5 +1,3 @@
-'use strict';
-
 function declare(className, superClass, props) {
   if (typeof className !== 'string') {
     props = superClass;
@@ -7,7 +5,7 @@ function declare(className, superClass, props) {
     className = undefined;
   }
 
-  var classConstructor = props.constructor || function() {},
+  var classConstructor = function() {},
       superClassLength,
       method;
 
@@ -22,8 +20,10 @@ function declare(className, superClass, props) {
         tempFunc = function() {};
 
     for(; i < superClassLength; i++) {
-      for (method in superClass[i].prototype) {
-        tempFunc.prototype[method] = superClass[i].prototype[method];
+      var currenSuperClass = superClass[i].prototype;
+
+      for (method in currenSuperClass) {
+        tempFunc.prototype[method] = currenSuperClass[method];
       }
     }
 
@@ -32,9 +32,16 @@ function declare(className, superClass, props) {
 
   for (method in props) {
     classConstructor.prototype[method] = props[method];
+    if (typeof classConstructor.prototype[method] === 'function') {
+      classConstructor.prototype[method]._methodName = method;
+    }
   }
 
   classConstructor.prototype._className = className;
+  classConstructor.prototype.inherited = function(args) {
+    //Animal.prototype.getName.apply(this, arguments);
+    superClass.prototype[args.callee._methodName].apply(this, args);
+  };
 
   if (className) {
     window[className] = classConstructor;
@@ -54,7 +61,10 @@ declare('Smarty', null, {
 });
 
 declare('Cat', Animal, {
-  className: 'Cat',
+  getName: function() {
+    console.log('Cat say');
+    this.inherited(arguments);
+  },
   run: function() { console.log('I am running'); }
 });
 
@@ -67,12 +77,12 @@ declare('Dog', [Animal, Smarty], {
   getName: function() {
     console.log('Dog: ' + this.name);
     //Animal.prototype.getName.apply(this, arguments);
-    this.inherited();
+    //this.inherited(arguments);
   },
   say: function() {
     console.log('Dog say');
     //Animal.prototype.say.apply(this, arguments);
-    this.inherited();
+    //this.inherited(arguments);
   }
 });
 
@@ -102,6 +112,7 @@ smarty.serve();
 
 fiona.say();
 fiona.run();
+fiona.getName();
 console.log(fiona.name);
 
 rex.say();
