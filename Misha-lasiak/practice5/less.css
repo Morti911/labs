@@ -1,0 +1,64 @@
+@import "normalize.css";
+body {
+  background-color: lightgray;
+}
+.clear-fix {
+  content: '';
+  display: block;
+  clear: both;
+}
+.radius {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.box-100-100px {
+  height: 50px;
+  width: 50px;
+}
+.box-yellow,
+.box-red,
+.box-green {
+  height: 50px;
+  width: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.box-yellow {
+  border: 2px solid yellow;
+}
+.box-red {
+  border: 2px solid red;
+}
+.box-green {
+  border: 2px solid green;
+}
+.menu .menu-list {
+  list-style-type: none;
+  border: 2px solid black;
+}
+.menu .menu-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.menu .menu-list .menu-list-item {
+  float: left;
+}
+.menu .menu-list .menu-list-item a {
+  display: block;
+  padding: 5px 15px;
+  color: yellow;
+}
+.menu .menu-list .menu-list-item a:hover {
+  color: green;
+}
+.class1 {
+  background-color: black;
+  color: white;
+}
+.class2 {
+  background-color: white;
+  color: black;
+}

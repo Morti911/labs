@@ -10,9 +10,9 @@
         <header class="col-md-12">
             <div class="logo"><img src="Logo.png" alt="logo"></div>
             <div class="search">
-                <form action="search.php" method="post">
+                <form action="search.php" method="GET">
                     <input placeholder="Search" type="search" name="search[]">
-                    <button class="go-button">GO</button>
+                    <input type="submit" name="search-submit" class="go-button" value="GO">
                 </form>
             </div>
         </header>

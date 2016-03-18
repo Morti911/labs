@@ -1,8 +1,6 @@
 body {
 	background: url(../img/bg_all.gif) no-repeat;
 	background-size: cover;
-	margin-left: 150px;
-	margin-right: 150px;
 	margin-top: 20px;
 	margin-bottom: 0;
 	padding:0;
@@ -16,31 +14,35 @@ html {
 .logo {
 	width: 963px;
 	position: relative;
+	margin-left: 150px;
+	margin-right: 150px;
 }
 
 }
 
 div .logo-i {
 	float: left;
-	left: 0;
-	position: absolute;
 	width: 160px;
 	height: 39px;
 
 }
 
 .logo-q {
-	float: left;
-	right: 0;
-	position: absolute;
-	top: 10px; 
-	margin:0;
-
+	float: right;
+    margin-top: -33px;
 }
 
 
 
-.img::after {
+.img::after,
+.menu::after,
+.menu-nav::after,
+.content-first::after,
+.content::after,
+.content-middle::after,
+.wrap1::after,
+.text1::after,
+.clients::after {
 	content: '';
 	display: block;
 	clear: both;
@@ -55,12 +57,17 @@ div .logo-i {
 
 .go {
 	margin-right: 0;
-	height: 31px;
+	height: 32px;
 	width: 41px;
 	margin-left: -4px;
 	overflow: hidden;
+	color: white;
+	background-color: #29c5e6;
+	border: none;
+	cursor: pointer;
 }
 
+/*
 .img {
 	height: 31px;
 	width: 42px;
@@ -73,6 +80,7 @@ div .logo-i {
 	margin:0; 
 	z-index: 1;
 }
+*/
 
 nav {
 	width: 100%;
@@ -83,7 +91,6 @@ ul {
 	list-style: none;
 	padding:0px;
 	height: 34px;
-
 }
 
 .main-menu {
@@ -91,6 +98,8 @@ ul {
 	height: 34px;
 	margin-bottom: 28px;
 	margin-top: 25px;
+	margin-left: 150px;
+	margin-right: 150px;
 }
 
 .menu {
@@ -104,13 +113,12 @@ ul {
 
 .menu a {
 	display:block;
-	position: relative;
 	float:left;
 	text-decoration: none;
 	margin: 0;
 	color: #9c9c9c;
 	max-height: 40px;
-	padding: 7px 20px 7px 24px;
+	padding: 7px 20px 7px 26px;
 }
 
 .menu a:hover {
@@ -120,19 +128,16 @@ ul {
 }
 
 .menu ul li {
-	position: relative;
-	display: block;
-		height: 40px;
-	}
 
-.menu::after {
-	content: '';
 	display: block;
-	clear: both;
+	height: 40px;
 }
+
 
 .baner-place {
 	width: 963px;
+	margin-left: 150px;
+	margin-right: 150px;
 }
 
 .baner {
@@ -141,11 +146,12 @@ ul {
 	max-width: 963px;
     max-height: 280px;
     width: 100%;
-	
 }
 
 .outer-menu-nav {
 	width: 963px;
+	margin-left: 150px;
+	margin-right: 150px;
 }
 
 .menu-nav {
@@ -173,7 +179,6 @@ ul {
 	list-style: none;
 	padding:0px;
 	height: 50px;
-
 }
 
 .menu-nav span {
@@ -193,34 +198,21 @@ ul {
 
 }
 
-.menu-nav::after {
-	content: '';
-	display: block;
-	clear: both;
-}
 
 .content {
 	width: 100%;
-   
+   	margin-left: 150px;
+	margin-right: 150px;
     margin-top: -5px;
 }
 
-.content-first::after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.content::after {
-	content: '';
-	display: block;
-	clear: both;
-}
 
 .content-first {
 	width: 100%;
 	float: left;
 }
+
+/* если убираю одно из свойств, блок уходит вправо. почему?*/
 
 .content-inner {
 	margin-top: 35px;
@@ -233,11 +225,6 @@ ul {
 	box-sizing:border-box;
 }
 
-.content-middle::after {
-	content: '';
-	display: block;
-	clear: both;
-}
 
 .article-header {
 	float: left;
@@ -282,15 +269,9 @@ ul {
 }
 
 
-.wrap1::after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
 .img-article {
- float: left;
- margin-right: 7px;
+    float: left;
+    margin-right: 7px;
 }
 
 .wrap1 {
@@ -303,25 +284,8 @@ ul {
 .wrap2 {
 	width:100%;
 	height: 140px;
-
 }
 
-/*.i {
-	width: 100%;
-	float: left;
-}
-
-.text1 {
-	color: #868686;
-	font-size: 13px;
-	margin-left: 7px;
-	text-align: justify;
-	float: left;
-	position: absolute;
-	margin-left: 153px;
-    top: 16px;
-}
-*/
 
 .text1 {
 	color: #868686;
@@ -329,11 +293,6 @@ ul {
 	text-align: justify;
 }	
 
-.text1::after {
-	content: '';
-	display: block;
-	clear: both;
-}
 
 .read {
 	color: #525252;
@@ -342,7 +301,6 @@ ul {
 
 .content-middle {
 	float: left;
-	width: 100%;
 	margin-top: 40px;
 }
 
@@ -354,14 +312,8 @@ ul {
     margin-right: 10px;
 }
 
-.content-midle::after {
-	content: '';
-	display: block;
-	clear: both;
-}
 
 .text2 {
-	width: 100%;
 	float: left;
 }
 
@@ -412,36 +364,29 @@ ul {
  .clients {
  	width: 963px;
  	margin: 10px 10px 0 10px;
+ 	margin-left: 150px;
+	margin-right: 150px;
  }
 
 .inner-client {
 	float: left;
-	margin: 0 2% 0 2%;
+	margin: 0px 23px 0 23px;
 	padding-top: 1%;
 }
 
 
-.clients::after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-/* как мне сбросить настройки для футера, ранее установленные для боди? я имею ввиду отступы справа и слева. 
-Чтобы футер их игрорировал?*/
-
-
 .footer-content {
-	width: 100%;
 	height: 112px;
 	background-color: #7e7e7e;
 	margin-top: 20px;
 	padding-left: 10px;
+/* если не указываю высоту, он уменьшается до строчки. Указанная высота для внутренних блоков ситуацию не спасает(  */
 }
 
 .twitter {
 	width: 300px;
 	float: left;
+	margin-left: 150px;
 }
 
 .tw1 {
@@ -486,5 +431,5 @@ ul {
 .social {
 	width: 130px;
 	float: left;
-		margin-left: 20px;
+	margin-left: 20px;
 }

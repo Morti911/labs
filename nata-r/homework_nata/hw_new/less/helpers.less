@@ -1,0 +1,51 @@
+.pull_right {
+  float: right;
+}
+
+.pull_left {
+  float: left;
+}
+
+.clearfix {
+  display: block;
+  zoom: 1;
+  &::after {
+    content: '';
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.baner-text {
+  color: @color_text1;
+  text-align: center;
+}
+
+.margings {
+  margin: 0 auto;
+}
+
+.small-letters {
+  font-size: @font_p;
+  line-height: 10px;
+}
+
+
+.big-letters {
+  text-transform: uppercase;
+  font-size: 8px;
+}
+
+.blocks {
+  width: 140px;
+  float: left;
+  padding:5px;
+}
+
+.font {
+  font-size: @font_p;
+  line-height: 9px;
+}

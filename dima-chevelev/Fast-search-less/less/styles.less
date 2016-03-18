@@ -1,0 +1,483 @@
+@import "variables";
+@import "helpers";
+@import "../css/reset.css";
+
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("../fonts/OpenSans-Regular-webfont.ttf");
+}
+
+@font-face {
+	font-family: "OpenSansLight";
+	src: url("../fonts/OpenSans-Light-webfont.ttf");
+}
+
+@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSans-Bold-webfont.ttf");
+}
+
+header.header-page {
+	background: @background-header-img;
+	background-color: @background-color-img;
+	background-blend-mode: exclusion;
+	background-size: cover;
+	//Как правильно указать размер фона?
+	
+	.nav-pannel {
+		display: inline-block;
+		background-color: @red-color;
+		padding: 39px 0 39px 20px;
+		width: 100%;
+
+		input {
+			border-style: none;
+			background-color: lighten(@red-color, 30);
+			height: 20px;
+			color: @red-color;
+		}
+
+		li {
+			a {
+				.font-style-1;
+				padding: 39px 20px;
+				&:hover {
+					background-color: lighten(@red-color, 10);
+					.hover-style;
+				}
+			}
+		}
+	}
+
+	h1 {
+		.font-style-light;
+		margin-top: 175px;
+	}	
+
+	h2 {
+		font: 14px OpenSansRegular;
+		color: @white-font;
+		line-height: 22px;
+		margin-top: 45px;
+		padding: 0 150px;
+	}
+
+	.button {
+		display: inline-block;
+		padding: 14px 55px 14px 55px;
+		background-color: rgba(255, 255, 255, 0.1);
+		.border;
+		.font-style-1;
+		margin: 75px 0 110px 0;
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.5);
+			.hover-style;
+		}
+	}
+
+	p.header-page-nav,
+	p.header-page-nav a {
+		.font-style-3;
+		color: @white-font;
+		text-align: left;
+		.padding-v(120px; 10px);
+	}
+}
+
+main {
+	section.description,
+	section.proof,
+	section.products,
+	section.blog,
+	section.blogpost,
+	section.contact {
+		.center {
+			.padding-v(100px; 100px);
+
+			article.col-md-6 {
+				width: 49%;
+				text-align: left;
+				margin-right: 20px;
+				&:nth-child(even) {
+					margin-right: 0;
+				}
+
+				.img-products {
+					.margin-v(30px; 80px);
+
+					.col-md-3 {
+						margin-right: 20px;
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+				}
+				input,
+				textarea,
+				button {
+					.size(100%; 45px);
+					padding: 10px 15px 10px;
+					display: inline-block;
+					.font-style-form;
+					border-style: none;
+					background-color: @form-bg-color;
+					margin-bottom: 10px;
+				}
+
+				input[type="text"] {
+					margin-top: 35px;
+				}
+
+				textarea {
+					height: 180px;
+				}	
+
+				button {
+					background-color: @red-color;
+					color: @white-font;
+					text-transform: uppercase;
+				}
+
+				iframe {
+					margin-bottom: 30px;
+				}
+
+				.adress-1 {
+					margin-right: 100px;
+				}
+			}
+
+			h3 {
+				.font-style-2;
+				margin-bottom: 35px;
+
+				span {
+					color: @red-color;
+				}
+			}
+
+			p {
+				display: inline-block;
+				.font-style-3;
+
+				a {
+					color: @red-color;
+					text-decoration: underline;
+				}
+
+				span.redbold {
+					color: @red-color;
+					font-family: OpenSansBold;
+				}
+
+				span.italic {
+					font-style: italic;
+				}
+
+				span.darkbold {
+					font-family: OpenSansBold;
+				}
+			}
+
+			span.author {
+				color: @grey-font;
+				font-size: 12px;
+			}
+
+			article.col-md-9 {
+				width: 73%;
+				text-align: left;
+				margin-right: 20px;
+			}
+
+			article.col-md-3 {
+				width: 23%;
+				text-align: left;
+				
+				ul {
+					list-style-type: square;
+					color: @red-color;
+					margin-top: 35px;
+
+					li {
+						margin-bottom: 16px;
+						&:last-child {
+							margin-bottom: 0;
+						}
+
+						span {
+							.font-style-3;
+						}
+					}
+				}
+			}
+
+			article.blogpost-post {
+				text-align: left;
+
+				h3 {
+					margin-bottom: 0;
+				}
+
+				span.author {
+					display: inline-block;
+					.margin-v(10px; 10px);
+				}
+
+				.blogpost-post-social-links {
+					a {
+						p {
+							color: @white-font;
+							margin-left: 8px;
+						}
+
+						&.tw-bg {
+							.size(95px; 35px);
+							margin-right: 5px;
+							background-color: @social-bg-color-tw;
+							padding: 8px 10px;
+							.tw-bg-ic {
+								background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+								.size(17px; 17px);
+								margin-top: 2px;
+							}
+						}
+
+						&.fb-bg {
+							.tw-bg;
+							background-color: @social-bg-color-fb;
+							padding: 8px 4px;
+							.fb-bg-ic {
+								background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+								.size(11px; 15px);
+								background-position: -17px 0;
+								margin-top: 2px;
+							}
+						}
+
+						&.g-bg {
+							.tw-bg;
+							background-color: @social-bg-color-g-p;
+							padding: 8px 6px;
+							.g-bg-ic {
+								background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+								.size(15px; 15px);
+								background-position: -32px 0;
+								margin-top: 2px;
+							}
+						}
+
+						&.p-bg {
+							.g-bg;
+							.p-bg-ic {
+								background: url(../img/social-blogpost-white-sprites.png) no-repeat;
+								.size(15px; 15px);
+								background-position: -49px 0;
+								margin-top: 2px;
+							}
+						}
+					}
+				}
+
+				.blogpost-post-img {
+					.margin-v(30px; 30px);
+				}
+			}
+		}
+	}
+
+	section.products {
+		.center {
+			.padding-v(100px; 20px);
+		}	
+	}
+
+	section.blog {
+		.col-md-6 {
+			p {
+				.margin-v(20px; 80px);
+			}
+		}
+	}
+
+
+	section.question-help {
+		background: url(../img/bg-main-help.jpg) no-repeat;
+	}
+
+	section.question-us {
+		background: url(../img/bg-main-us.jpg) no-repeat;
+	}
+
+	section.question-help,
+	section.question-us {
+		background-color: @red-color;
+		background-blend-mode: soft-light;
+		background-size: cover;
+		.padding-v(45px; 45px);
+
+		h3 {
+			.font-style-light;
+			font-size: 38px;
+		}
+
+		.help-item,
+		.us-item {
+			margin-top: 55px;
+
+			.col-md-3 {
+				display: inline-block;
+				width: 24%;
+				padding-top: 50px;
+				margin-right: 9px;
+				&:last-child {
+					margin-right: 0;
+				}
+
+				p {
+					.font-style-3;
+					color: @white-font;
+					line-height: 1.2;
+				}
+			}
+
+			.download {
+				background: url(../img/help1.png) no-repeat top center;
+			}
+
+			.signs {
+				background: url(../img/help2.png) no-repeat top center;
+			}
+
+			.caddyfull {
+				background: url(../img/help3.png) no-repeat top center;
+			}
+
+			.battery {
+				background: url(../img/help4.png) no-repeat top center;
+			}
+		}
+
+		.us-item {
+			.col-md-3 {
+				padding-top: 0;
+			}
+		}
+	}
+
+	section.projects {
+		.padding-v(100px; 100px);
+
+		.center {
+			overflow: hidden;	
+
+			h3 {
+				.font-style-2;
+				text-align: left;
+				margin-bottom: 30px;
+
+				span {
+					color: @red-color;
+				}
+			}
+
+			.projects-inner {
+				width: 32768px;
+				height: 100%;
+
+				figure.projects-slide {
+					float: left;
+					margin-right: 15px;
+
+					figcaption {
+						.font-style-3;
+						text-align: left;
+						padding-top: 15px;
+					}
+				}
+			}
+		}	
+	}
+}
+
+footer.footer-page {
+	background-color: @footer-color;
+	.padding-v(35px; 35px);
+
+	section.about,
+	section.location,
+	section.blog {
+		width: 24%;
+		text-align: left;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		h3 {
+			.font-style-4;
+			margin-bottom: 30px;
+
+			span {
+				color: @red-color;
+			}
+		}  //сделать условия с внешними переменными
+
+		.blog-item {
+			width: 49%;
+			margin-right: 9px;
+
+			&:nth-child(odd) {
+				margin-right: 0;
+			}
+		}
+
+		.about-item-img,
+		.blog-item-img {
+			margin: 0 10px 10px 0;
+		}
+			
+		p {
+			.font-style-footer;
+		}
+
+		.location-item {
+			a {
+				color: @red-color;
+				text-decoration: underline;
+			}
+
+			.social-footer {
+				margin-top: 15px;
+				a {
+					display: inline-block;
+					width: 17px;
+					height: 17px;
+					background: url(../img/social-footer-sprites.png) no-repeat;
+				}
+
+				.ic-tw {
+					background-position: 0 0;
+				}
+
+				.ic-fb {
+					background-position: -17px 0;
+				}
+
+				.ic-g {
+					background-position: -34px 0;
+				}
+
+				.ic-p {
+					background-position: -51px 0; //сделать циклы
+				}
+			}
+		}		
+	}
+
+	section.blog {
+		width: 48%;
+	}
+}

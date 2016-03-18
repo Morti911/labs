@@ -1,0 +1,72 @@
+@import "Variables.less";
+@import "Help.less";
+@import "normalize.css"; 
+
+.box-yellow, .box-red, .box-green{
+    .box-100-100px();
+    .radius();
+}
+
+.box-yellow{
+    .border(yellow);
+//    background-color: yellow;
+}
+.box-red{
+    .border(red);
+//    background-color: red;
+}
+
+.box-green{
+    .border(green);
+//    background-color: green;
+}
+
+
+.menu{
+    .menu-list{
+        list-style-type: none;
+        .border(black);
+        &::after{
+            .clear-fix();
+        }
+        .menu-list-item{
+            float: left;
+            a{
+                display: block;
+                padding: 5px 15px;
+                color:yellow;
+                &:hover{
+                    color:green;
+                }
+            }
+        }
+    }
+}
+
+.mixin(@a) when (lightness(@a) >= 50%){
+    background-color: black;
+}
+
+.mixin(@a) when (lightness(@a) < 50%){
+    background-color: white;
+}
+
+.mixin(@a){
+    color: @a;
+}
+
+.class1{
+    .mixin(white);
+}
+.class2{
+    .mixin(black);
+}
+
+.loop(@counter)when(@counter>0){
+    .loop((@counter-1));
+    width:10px*@counter;
+}
+
+.div{
+    .loop(5);
+}

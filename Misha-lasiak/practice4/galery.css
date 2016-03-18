@@ -1,0 +1,38 @@
+.galery{
+    height: 400px;
+    width: 500px;
+    margin: 50px auto 0;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.galery-inner{
+    width: 32768px;
+    position: relative;
+    
+}
+
+.galery-inner:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.item{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    float: left;
+}
+
+.btn-left, .btn-right{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.btn-left{
+    left:0;
+}
+.btn-right{
+    left:491px;
+}
