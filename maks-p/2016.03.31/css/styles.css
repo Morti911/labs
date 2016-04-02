@@ -1,0 +1,42 @@
+.modals-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modals-overlay .modal {
+  background-color: #fff;
+  display: none;
+  width: 400px;
+  min-height: 200px;
+  min-width: 400px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -200px;
+}
+
+.modals-overlay .modal .modal-header {
+  background: #666;
+  color: #ccc;
+}
+
+.modals-overlay .modal .modal-header .btn-close {
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.modals-overlay .modal .modal-footer {
+  background: #666;
+  color: #ccc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

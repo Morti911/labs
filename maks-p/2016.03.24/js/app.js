@@ -42,11 +42,13 @@ function setColor(el, color) {
 }
 
 function slideUp(el) {
+  clearInterval(el.interval);
+
   el.style.overflow = 'hidden';
 
-  var interval = setInterval(function() {
+  el.interval = setInterval(function() {
     if (el.offsetHeight <= 0) {
-      clearInterval(interval);
+      clearInterval(el.interval);
     } else {
       el.style.height = Math.floor(el.offsetHeight/2) + 'px';
     }
@@ -54,6 +56,8 @@ function slideUp(el) {
 }
 
 function slideDown(el) {
+  clearInterval(el.interval);
+
   var clone = el.cloneNode(true);
   clone.style.visibility = 'hidden';
   clone.style.height = '';
@@ -61,9 +65,9 @@ function slideDown(el) {
 
   var cloneHeight = clone.offsetHeight;
 
-  var interval = setInterval(function() {
+  el.interval = setInterval(function() {
     if (el.offsetHeight >= cloneHeight) {
-      clearInterval(interval);
+      clearInterval(el.interval);
     } else {
       el.style.height = el.offsetHeight + 5 + 'px';
     }
@@ -74,7 +78,7 @@ function slideDown(el) {
 
 function fadeOut(el) {
   var interval = setInterval(function() {
-    var opacity = el.style.opacity || 1;
+    var opacity = el.style.opacity/*''*/ || 1;
 
     if (opacity <= 0) {
       el.style.display = 'none';
