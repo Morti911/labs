@@ -24,32 +24,28 @@ window.addEventListener('load', function() {
         var modalUrl = btnNode.getAttribute('data-modal-url');
 
         if (modalUrl) {
-          var req = new XMLHttpRequest();
+          $ajax({
+            url: modalUrl,
+            success: function(result) {
+              modalsOverlayNode.innerHTML += result;
 
-          req.open('GET', modalUrl, true);
+              modalNode = modalsOverlayNode.querySelector('[data-modal-id="' + modalId + '"]');
 
-          req.onreadystatechange = function(aEvt) {
-            if (req.readyState === 4) {
-              if (req.status === 200) {
-                modalsOverlayNode.innerHTML += req.responseText;
+              showModal(modalNode);
 
-                modalNode = modalsOverlayNode.querySelector('[data-modal-id="' + modalId + '"]');
+              var subModalBtns = modalsOverlayNode.querySelectorAll('[data-modal]');
 
-                showModal(modalNode);
-
-                var subModalBtns = modalsOverlayNode.querySelectorAll('[data-modal]');
-
-                Array.prototype.forEach.call(subModalBtns, function(subModalBtn) {
-                  subModalBtn.addEventListener('click', onModalBtnClick);
-                })
-
-              } else {
-                console.error(req, aEvt);
-              }
+              Array.prototype.forEach.call(subModalBtns, function(subModalBtn) {
+                subModalBtn.addEventListener('click', onModalBtnClick);
+              })
             }
-          };
+          });
+        } else {
+          var url = btnNode.getAttribute('data-url');
 
-          req.send(null);
+          if (url) {
+
+          }
         }
       }
     }
