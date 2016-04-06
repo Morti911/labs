@@ -6,6 +6,8 @@ function $ajax(obj) {
       url: String
       async: true|false
         | default: true
+      responseType: String
+        | default: 'text'
       success: function() {}
       error: function() {}
         | function() { console.error(responseText) }
@@ -20,6 +22,7 @@ function $ajax(obj) {
   var method = obj.method || 'GET',
       url = obj.url,
       asynchronous = obj.async || true,
+      responseType = obj.responseType || 'text',
       success = obj.success,
       error = obj.error || function(req, aEvt) {
         console.error(req, aEvt);
@@ -35,7 +38,17 @@ function $ajax(obj) {
       req.onreadystatechange = function(aEvt) {
         if (req.readyState === 4) {
           if (req.status === 200) {
-            success && success(req.responseText, req);
+            if (responseType === 'json') {
+              var responseJson;
+
+              try {
+                responseJson = JSON.parse(req.responseText);
+              } catch (e) {
+
+              }
+            }
+            
+            success && success(responseJson || req.responseText, req);
           } else {
             error(req, aEvt);
           }

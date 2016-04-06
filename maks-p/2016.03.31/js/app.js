@@ -1,7 +1,8 @@
 window.addEventListener('load', function() {
   var modalBtns = document.querySelectorAll('[data-modal]'),
       modalsOverlayNode = document.getElementsByClassName('modals-overlay')[0],
-      zIndex = 1000;
+      zIndex = 1000,
+      modalTemplate;
 
   var showModal = function(modalNode) {
     modalNode.setAttribute('data-opened', 'true');
@@ -21,13 +22,9 @@ window.addEventListener('load', function() {
       if (modalNode) {
         showModal(modalNode);
       } else {
-        var modalUrl = btnNode.getAttribute('data-modal-url');
-
-        if (modalUrl) {
-          $ajax({
-            url: modalUrl,
-            success: function(result) {
-              modalsOverlayNode.innerHTML += result;
+        var modalUrl = btnNode.getAttribute('data-modal-url'),
+            addAndShowModal = function(modalHtml) {
+              modalsOverlayNode.innerHTML += modalHtml;
 
               modalNode = modalsOverlayNode.querySelector('[data-modal-id="' + modalId + '"]');
 
@@ -37,14 +34,47 @@ window.addEventListener('load', function() {
 
               Array.prototype.forEach.call(subModalBtns, function(subModalBtn) {
                 subModalBtn.addEventListener('click', onModalBtnClick);
-              })
+              });
+            };
+
+        if (modalUrl) {
+          $ajax({
+            url: modalUrl,
+            success: function(result) {
+              addAndShowModal(result);
             }
           });
         } else {
           var url = btnNode.getAttribute('data-url');
 
           if (url) {
+            $ajax({
+              url: url,
+              responseType: 'json',
+              success: function(result) {
+                var onTemplateLoaded = function () {
+                  var modalHandlebars = Handlebars.compile(modalTemplate);
 
+                  result.modalId = modalId;
+
+                  var modalHtml = modalHandlebars(result);
+
+                  addAndShowModal(modalHtml);
+                };
+
+                if (modalTemplate) {
+                  onTemplateLoaded();
+                } else {
+                  $ajax({
+                    url: '/templates/modal.html',
+                    success: function(result) {
+                      modalTemplate = result;
+                      onTemplateLoaded();
+                    }
+                  });
+                }
+              }
+            });
           }
         }
       }
