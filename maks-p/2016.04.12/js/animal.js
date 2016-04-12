@@ -14,8 +14,7 @@
   };
 
   if (!window.constructors){
-    window.constructors = {
-      Animal: Animal
-    };
+    window.constructors = {  };
   }
+  window.constructors.Animal= Animal;
 })();
