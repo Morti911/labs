@@ -1,0 +1,167 @@
+{
+    "results": [
+        {
+            "user": {
+                "gender": "male",
+                "name": {
+                    "title": "mr",
+                    "first": "gerson",
+                    "last": "da conceição"
+                },
+                "location": {
+                    "street": "4345 rua são luiz",
+                    "city": "garanhuns",
+                    "state": "tocantins",
+                    "zip": 59543
+                },
+                "email": "gerson.da conceição@example.com",
+                "username": "smalltiger901",
+                "password": "password9",
+                "salt": "lXzecbOp",
+                "md5": "657e7274b026a8a2b227e3164daca38c",
+                "sha1": "207867d4c20faf981f88c245729a5082087d165c",
+                "sha256": "c6b83ba7c075ba8e0a70988b06e97b8c8b498bec6037ed5f29acd4c8d1edde29",
+                "registered": 1401225065,
+                "dob": 223852225,
+                "phone": "(52) 8363-5393",
+                "cell": "(70) 8479-5877",
+                "picture": {
+                    "large": "https://randomuser.me/api/portraits/men/53.jpg",
+                    "medium": "https://randomuser.me/api/portraits/med/men/53.jpg",
+                    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/53.jpg"
+                }
+            }
+        },
+        {
+            "user": {
+                "gender": "female",
+                "name": {
+                    "title": "mrs",
+                    "first": "loraci",
+                    "last": "viana"
+                },
+                "location": {
+                    "street": "2431 rua rio de janeiro",
+                    "city": "marituba",
+                    "state": "paraíba",
+                    "zip": 62852
+                },
+                "email": "loraci.viana@example.com",
+                "username": "silverbird171",
+                "password": "higgins",
+                "salt": "O68f6Iin",
+                "md5": "1a5a1700e48639b92ab403cb499af60b",
+                "sha1": "a9fa6dba53b50162fe7ada1fb139cfa1831d6155",
+                "sha256": "d2436f8991a0a6972ef78587857fa15978de4b6264d8a9a8b0e1f763f783779b",
+                "registered": 1196943380,
+                "dob": 1195321293,
+                "phone": "(69) 1711-9579",
+                "cell": "(79) 0595-7712",
+                "picture": {
+                    "large": "https://randomuser.me/api/portraits/women/84.jpg",
+                    "medium": "https://randomuser.me/api/portraits/med/women/84.jpg",
+                    "thumbnail": "https://randomuser.me/api/portraits/thumb/women/84.jpg"
+                }
+            }
+        },
+        {
+            "user": {
+                "gender": "female",
+                "name": {
+                    "title": "mrs",
+                    "first": "celi",
+                    "last": "moreira"
+                },
+                "location": {
+                    "street": "2242 rua paraná",
+                    "city": "lauro de freitas",
+                    "state": "santa catarina",
+                    "zip": 81367
+                },
+                "email": "celi.moreira@example.com",
+                "username": "goldenmouse421",
+                "password": "devo",
+                "salt": "5R2VwzuO",
+                "md5": "4a504e0d8d824efb80c259931342df8e",
+                "sha1": "6ad1606b5ac8542a4d32164ffb966ebc80999419",
+                "sha256": "e6107996e0afd2c5d03a7361ea7805560a0d7441d6bad8d72dce9a4a496bca95",
+                "registered": 1176955949,
+                "dob": 944953626,
+                "phone": "(83) 2052-4905",
+                "cell": "(15) 8286-1880",
+                "picture": {
+                    "large": "https://randomuser.me/api/portraits/women/84.jpg",
+                    "medium": "https://randomuser.me/api/portraits/med/women/84.jpg",
+                    "thumbnail": "https://randomuser.me/api/portraits/thumb/women/84.jpg"
+                }
+            }
+        },
+        {
+            "user": {
+                "gender": "male",
+                "name": {
+                    "title": "mr",
+                    "first": "edvaldo",
+                    "last": "castro"
+                },
+                "location": {
+                    "street": "5554 rua mato grosso",
+                    "city": "patos de minas",
+                    "state": "amapá",
+                    "zip": 96617
+                },
+                "email": "edvaldo.castro@example.com",
+                "username": "goldenkoala847",
+                "password": "3636",
+                "salt": "6JW3ftaJ",
+                "md5": "c4dc9c831fdaca36c3b9b24d5eb30f09",
+                "sha1": "1cd09175a9c32c6ae076841ad79ebcce5b824b6a",
+                "sha256": "8f03e6b9e47d4f37e3971ee3fb5fdbf04f6536288e2350d05c98071e19fcb983",
+                "registered": 986706830,
+                "dob": 862357940,
+                "phone": "(29) 7503-3027",
+                "cell": "(14) 5158-2258",
+                "picture": {
+                    "large": "https://randomuser.me/api/portraits/men/68.jpg",
+                    "medium": "https://randomuser.me/api/portraits/med/men/68.jpg",
+                    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/68.jpg"
+                }
+            }
+        },
+        {
+            "user": {
+                "gender": "male",
+                "name": {
+                    "title": "mr",
+                    "first": "madate",
+                    "last": "aragão"
+                },
+                "location": {
+                    "street": "3185 rua primeiro de maio",
+                    "city": "itatiba",
+                    "state": "bahia",
+                    "zip": 94698
+                },
+                "email": "madate.aragão@example.com",
+                "username": "blackostrich718",
+                "password": "vermont",
+                "salt": "FxhG2zpf",
+                "md5": "2863c57ccef10dfd1679da94e87ce566",
+                "sha1": "f3abe2ae6f56ca8b0d484a047b1af9a11d50e998",
+                "sha256": "0fc6a91c0268d3f4f2c4094b03c47aa3c75d36055eed79b1cc5ec98548c8acb2",
+                "registered": 981946767,
+                "dob": 37399245,
+                "phone": "(89) 5807-0871",
+                "cell": "(11) 7012-6504",
+                "picture": {
+                    "large": "https://randomuser.me/api/portraits/men/60.jpg",
+                    "medium": "https://randomuser.me/api/portraits/med/men/60.jpg",
+                    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/60.jpg"
+                }
+            }
+        }
+    ],
+    "nationality": "BR",
+    "seed": "6654b99b7484639601",
+    "version": "0.8"
+}

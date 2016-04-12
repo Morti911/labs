@@ -1,0 +1,48 @@
+ul {
+  -webkit-padding-start: 0;
+}
+
+.gallery-preview {
+  list-style-type: none;
+  position: relative;
+  height: 100px;
+}
+
+.gallery-preview li {
+    position: absolute;
+    opacity: 0;
+    transition: all 1s ease;
+    display: none;
+}
+
+.gallery-preview li.active {
+  opacity: 1;
+  display: block;
+}
+
+.gallery-thumbnails-overflow {
+  width: 251px;
+  overflow: hidden;
+}
+
+.gallery-thumbnails {
+  list-style-type: none;
+  width: 10000px;
+  transition: all 1s ease;
+}
+
+.gallery-thumbnails li {
+  float: left;
+  margin: 0 1px;
+}
+
+.gallery-thumbnails li.active {
+  border: 2px solid #0000ff;
+  margin: 0 -1px;
+}
+
+.gallery-thumbnails::after {
+  content: '';
+  clear: both;
+  display: block;
+}
